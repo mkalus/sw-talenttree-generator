@@ -1,0 +1,631 @@
+# Career: Explorer/Fringer
+---
+id: ExplorerFringer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: Fringer
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - Astrogation
+  - Coordination
+  - Negotiation
+  - Streetwise
+talents:
+  - [GalaxyMapper, StreetSmarts, RapidRecovery, StreetSmarts]
+  - [SkilledJokey, GalaxyMapper, Grit, Toughened]
+  - [MasterStarhopper, DefensiveDriving, RapidRecovery, Durable]
+  - [RapidRecovery, JumpUp, Grit, Knockdown]
+  - [Dedication, Toughened, Dodge, Dodge]
+talent_paths:
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,0,1]
+  - [1,1,1,1]
+  - [1,0,0]
+  - [0,0,1,1]
+  - [1,1,0]
+  - [1,1,0,1]
+  - [1,0,1]
+---
+id: ExplorerScout
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: Scout
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - Athletics
+  - Medicine
+  - PilotingPlanetary
+  - Survival
+talents:
+  - [RapidRecovery, Stalker, Grit, Shortcut]
+  - [Forager, QuickStrike, LetsRide, Disorient]
+  - [RapidRecovery, NaturalHunter, FamiliarSuns, Shortcut]
+  - [Grit, HightenedAwareness, Toughened, QuickStrike]
+  - [UtilityBelt, Dedication, Stalker, Disorient]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,1,0]
+---
+id: ExplorerTrader
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: Trader
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - Deception
+  - KnowledgeCoreWorlds
+  - KnowledgeUnderworld
+  - Negotiation
+talents:
+  - [KnowSomebody, ConvincingDemeanor, WheelAndDeal, SmoothTalker]
+  - [WheelAndDeal, Grit, SpareClip, Toughened]
+  - [KnowSomebody, NobodysFool, SmoothTalker, NobodysFool]
+  - [WheelAndDeal, SteelyNerves, BlackmarketContacts, BlackmarketContacts]
+  - [KnowSomebody, NaturalNegotiator, Dedication, MasterMerchant]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,0]
+  - [1,1,1]
+  - [1,0,0,0]
+  - [1,1,1]
+  - [1,0,0,0]
+  - [1,1,1]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+id: BountyHunterAssassin
+type: de.beimax.talenttree.PageGeneratorCareer
+header: BountyHunter
+subheader: Assassin
+skills:
+  - Athletics
+  - Brawl
+  - PilotingPlanetary
+  - PilotingSpace
+  - RangedHeavy
+  - Streetwise
+  - Vigilance
+  - Perception
+bonus_skills:
+  - Stealth
+  - Skulduggery
+  - Melee
+  - RangedHeavy
+talents:
+  - [Grit, LethalBlows, Stalker, Dodge]
+  - [PreciseAim, JumpUp, QuickStrike, QuickDraw]
+  - [TargetedBlow, Stalker, LethalBlows, AnatomyLessons]
+  - [Stalker, SniperShot, Dodge, LethalBlows]
+  - [PreciseAim, DeadlyAccuracy, Dedication, MasterOfShadows]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [0,1,0]
+  - [1,1,1,1]
+  - [1,0,0]
+  - [1,1,1,1]
+  - [0,0,0]
+---
+id: BountyHunterGadgeteer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: BountyHunter
+subheader: Gadgeteer
+skills:
+  - Athletics
+  - Brawl
+  - PilotingPlanetary
+  - PilotingSpace
+  - RangedHeavy
+  - Streetwise
+  - Vigilance
+  - Perception
+bonus_skills:
+  - Brawl
+  - Coercion
+  - Mechanics
+  - RangedLight
+talents:
+  - [Brace, Toughened, Intimidating, DefensiveStance]
+  - [SpareClip, JuryRigged, PointBlank, Disorient]
+  - [Toughened, ArmorMaster, NaturalEnforcer, StunningBlow]
+  - [JuryRigged, Tinkerer, DeadlyAccuracy, StunningBlowImproved]
+  - [Intimidating, Dedication, ArmorMasterImproved, CripplingBlow]
+talent_paths:
+  - [0,0,0]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [1,1,0]
+---
+id: BountyHunterSurvivalist
+type: de.beimax.talenttree.PageGeneratorCareer
+header: BountyHunter
+subheader: Survivalist
+skills:
+  - Athletics
+  - Brawl
+  - PilotingPlanetary
+  - PilotingSpace
+  - RangedHeavy
+  - Streetwise
+  - Vigilance
+  - Perception
+bonus_skills:
+  - KnowledgeXenology
+  - Perception
+  - Resilience
+  - Survival
+talents:
+  - [Forager, Stalker, Outdoorsman, ExpertTracker]
+  - [Outdoorsman, Swift, Hunter, SoftSpot]
+  - [Toughened, ExpertTracker, Stalker, NaturalOutdoorsman]
+  - [Toughened, Hunter, ExpertTracker, Blooded]
+  - [Enduring, Dedication, Grit, HeroicFortitude]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,0]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [0,0,1]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,1,0]
+---
+id: ColonistDoctor
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Colonist
+subheader: Doctor
+skills:
+  - Charm
+  - Leadership
+  - Streetwise
+  - Deception
+  - Negotiation
+  - KnowledgeEducation
+  - KnowledgeLore
+  - KnowledgeCoreWorlds
+bonus_skills:
+  - Cool
+  - KnowledgeEducation
+  - Medicine
+  - Resilience
+talents:
+  - [Surgeon, BactaSpecialist, Grit, Resolve]
+  - [StimApplication, Grit, Surgeon, Resolve]
+  - [Surgeon, Grit, BactaSpecialist, PressurePoint]
+  - [StimApplicationImproved, NaturalDoctor, Toughened, AnatomyLessons]
+  - [StimApplicationSupreme, MasterDoctor, Dedication, Dodge]
+talent_paths:
+  - [0,0,0]
+  - [1,0,1,0]
+  - [1,1,1]
+  - [1,0,1,1]
+  - [1,1,0]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,0]
+---
+id: ColonistPolitico
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Colonist
+subheader: Politico
+skills:
+  - Charm
+  - Leadership
+  - Streetwise
+  - Deception
+  - Negotiation
+  - KnowledgeEducation
+  - KnowledgeLore
+  - KnowledgeCoreWorlds
+bonus_skills:
+  - Charm
+  - Coercion
+  - Deception
+  - KnowledgeCoreWorlds
+talents:
+  - [KillWithKindness, Grit, PlausibleDeniability, Toughened]
+  - [InspiringRhetoric, KillWithKindness, ScathingTirade, PlausibleDeniability]
+  - [Dodge, InspiringRhetoricImproved, ScathingTiradeImproved, WellRounded]
+  - [Grit, InspiringRhetoricSupreme, ScathingTiradeSupreme, NobodysFool]
+  - [SteelyNerves, Dedication, NaturalCharmer, IntensePresence]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,0,0,1]
+  - [1,0,1]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+id: ColonistScholar
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Colonist
+subheader: Scholar
+skills:
+  - Charm
+  - Leadership
+  - Streetwise
+  - Deception
+  - Negotiation
+  - KnowledgeEducation
+  - KnowledgeLore
+  - KnowledgeCoreWorlds
+bonus_skills:
+  - KnowledgeOuterRim
+  - KnowledgeUnderworld
+  - KnowledgeXenology
+  - Perception
+talents:
+  - [RespectedScholar, SpeaksBinary, Grit, Brace]
+  - [Researcher, RespectedScholar, Resolve, Researcher]
+  - [CodeBreaker, KnowledgeSpecialization, NaturalScholar, WellRounded]
+  - [KnowledgeSpecialization, IntenseFocus, Confidence, Resolve]
+  - [StrokeOfGenius, MentalFortress, Dedication, Toughened]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,0,0,1]
+  - [1,0,1]
+  - [0,1,1,0]
+  - [1,0,1]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+id: HiredGunBodyguard
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Bodyguard
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Gunnery
+  - Perception
+  - PilotingPlanetary
+  - RangedHeavy
+talents:
+  - [Toughened, Barrage, Durable, Grit]
+  - [BodyguardT, HardHeaded, Barrage, Brace]
+  - [BodyguardT, SideStep, DefensiveStance, Brace]
+  - [Enduring, SideStep, DefensiveStance, HardHeaded]
+  - [Dedication, Barrage, Toughened, HardHeadedImproved]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [0,1,0]
+  - [1,1,1,0]
+  - [0,1,1]
+  - [0,1,1,1]
+  - [1,1,0]
+---
+id: HiredGunMarauder
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Marauder
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Coercion
+  - Melee
+  - Resilience
+  - Survival
+talents:
+  - [Toughened, FrenziedAttack, FeralStrength, LethalBlows]
+  - [FeralStrength, Toughened, HeroicFortitude, Knockdown]
+  - [Enduring, LethalBlows, Toughened, FrenziedAttack]
+  - [Toughened, FeralStrength, NaturalBrawler, LethalBlows]
+  - [FrenziedAttack, Enduring, DefensiveStance, Dedication]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [0,1,1,0]
+  - [1,1,1]
+  - [1,0,0,1]
+  - [1,1,1]
+  - [0,1,1,0]
+  - [1,1,1]
+---
+id: HiredGunMercenarySoldier
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: MercenarySoldier
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Discipline
+  - Gunnery
+  - Leadership
+  - RangedHeavy
+talents:
+  - [Command, SecondWind, PointBlank, SideStep]
+  - [SecondWind, Confidence, StrongArm, PointBlank]
+  - [FieldCommander, Command, NaturalMarksman, SniperShot]
+  - [FieldCommanderImproved, Grit, Toughened, LethalBlows]
+  - [DeadlyAccuracy, TrueAim, Dedication, TrueAim]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,1,1,0]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [0,0,1]
+  - [0,1,0,1]
+  - [1,1,1]
+---
+id: SmugglerPilot
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Smuggler
+subheader: Pilot
+skills:
+  - Skulduggery
+  - Coordination
+  - PilotingSpace
+  - Streetwise
+  - Deception
+  - Vigilance
+  - Perception
+  - KnowledgeUnderworld
+bonus_skills:
+  - Astrogation
+  - Gunnery
+  - PilotingSpace
+  - PilotingPlanetary
+talents:
+  - [FullThrottle, SkilledJokey, GalaxyMapper, LetsRide]
+  - [SkilledJokey, DeadToRights, GalaxyMapper, RapidRecovery]
+  - [FullThrottleImproved, DeadToRightsImproved, Grit, NaturalPilot]
+  - [Grit, FullThrottleSupreme, TrickyTarget, DefensiveDriving]
+  - [MasterPilot, Dedication, Toughened, BrilliantEvasion]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,1,1,1]
+  - [0,0,1]
+  - [1,0,1,1]
+  - [1,0,0]
+  - [1,0,1,1]
+  - [1,1,1]
+---
+id: SmugglerScoundrel
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Smuggler
+subheader: Scoundrel
+skills:
+  - Skulduggery
+  - Coordination
+  - PilotingSpace
+  - Streetwise
+  - Deception
+  - Vigilance
+  - Perception
+  - KnowledgeUnderworld
+bonus_skills:
+  - Charm
+  - Cool
+  - Deception
+  - RangedLight
+talents:
+  - [BlackmarketContacts, ConvincingDemeanor, QuickDraw, RapidReaction]
+  - [ConvincingDemeanor, BlackmarketContacts, ConvincingDemeanor, QuickStrike]
+  - [HiddenStorage, Toughened, BlackmarketContacts, SideStep]
+  - [Toughened, RapidReaction, HiddenStorage, SideStep]
+  - [Dedication, NaturalCharmer, SoftSpot, QuickStrike]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,1]
+  - [0,1,0]
+  - [1,1,1,1]
+  - [0,1,0]
+  - [1,1,1,1]
+  - [0,1,0]
+  - [1,1,1,1]
+  - [1,1,1]
+---
+id: SmugglerThief
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Smuggler
+subheader: Thief
+skills:
+  - Skulduggery
+  - Coordination
+  - PilotingSpace
+  - Streetwise
+  - Deception
+  - Vigilance
+  - Perception
+  - KnowledgeUnderworld
+bonus_skills:
+  - Computers
+  - Skulduggery
+  - Stealth
+  - Vigilance
+talents:
+  - [StreetSmarts, BlackmarketContacts, Indistinguishable, BypassSecurity]
+  - [BlackmarketContacts, Dodge, Grit, HiddenStorage]
+  - [Stalker, Grit, RapidReaction, Shortcut]
+  - [BypassSecurity, NaturalRogue, StreetSmarts, JumpUp]
+  - [MasterOfShadows, Dodge, Indistinguishable, Dedication]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [0,1,1]
+  - [1,1,1,1]
+  - [0,1,0]
+---
+id: TechnicianMechanic
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Technician
+subheader: Mechanic
+skills:
+  - Astrogation
+  - Computers
+  - Coordination
+  - Discipline
+  - Mechanics
+  - Perception
+  - PilotingPlanetary
+  - KnowledgeOuterRim
+bonus_skills:
+  - Brawl
+  - Mechanics
+  - PilotingSpace
+  - Skulduggery
+talents:
+  - [Gearhead, Toughened, FineTuning, SolidRepairs]
+  - [RedundantSystems, SolidRepairs, Gearhead, Grit]
+  - [SolidRepairs, Enduring, BadMotivator, Toughened]
+  - [Contraption, SolidRepairs, FineTuning, HardHeaded]
+  - [NaturalTinkerer, HoldTogether, Dedication, HardHeadedImproved]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,0]
+  - [1,1,1,1]
+  - [0,0,0]
+---
+id: TechnicianOutlawTech
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Technician
+subheader: OutlawTech
+skills:
+  - Astrogation
+  - Computers
+  - Coordination
+  - Discipline
+  - Mechanics
+  - Perception
+  - PilotingPlanetary
+  - KnowledgeOuterRim
+bonus_skills:
+  - KnowledgeEducation
+  - KnowledgeUnderworld
+  - Mechanics
+  - Streetwise
+talents:
+  - [Tinkerer, Utinni, SpeaksBinary, Tinkerer]
+  - [SolidRepairs, Grit, Utinni, Toughened]
+  - [UtilityBelt, SideStep, Brace, DefensiveStance]
+  - [JuryRigged, SpeaksBinary, Inventor, JuryRigged]
+  - [Inventor, Dedication, KnownSchematic, Brace]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,0]
+  - [1,0,1,1]
+  - [1,0,1]
+---
+id: TechnicianSlicer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Technician
+subheader: Slicer
+skills:
+  - Astrogation
+  - Computers
+  - Coordination
+  - Discipline
+  - Mechanics
+  - Perception
+  - PilotingPlanetary
+  - KnowledgeOuterRim
+bonus_skills:
+  - Computers
+  - KnowledgeEducation
+  - KnowledgeUnderworld
+  - Stealth
+talents:
+  - [CodeBreaker, Grit, TechnicalAptitude, BypassSecurity]
+  - [DefensiveSlicing, TechnicalAptitude, Grit, BypassSecurity]
+  - [NaturalProgrammer, BypassSecurity, DefensiveSlicing, Grit]
+  - [DefensiveSlicing, DefensiveSlicingImproved, CodeBreaker, Resolve]
+  - [SkilledSlicer, MasterSlicer, MentalFortress, Dedication]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,0]
+  - [0,1,1]
+  - [1,1,1,1]
+  - [0,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
