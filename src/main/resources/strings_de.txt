@@ -5,6 +5,10 @@
 #######################################################################################################################
 General
 #######################################################################################################################
+version = 1
+date = 16.07.2014
+game = Am Rande des Imperiums
+copyright = (c) Fantasy Flight Games and Heidelberger Spiele
 FileName = Talente_SW_ARdI
 Active = Aktiv
 Passive = Passiv

@@ -235,6 +235,19 @@ public abstract class AbstractPageGenerator {
     }
 
     /**
+     * add footer information to page, copyright, etc.
+     */
+    protected void addFooter() throws Exception {
+        // draw legend text
+        canvas.beginText();
+        canvas.setFontAndSize(generator.getFontRegular(), 6f);
+        canvas.setColorFill(BaseColor.BLACK);
+        canvas.showTextAligned(Element.ALIGN_LEFT, getLocalizedString("copyright"), getLeftX(), PDFGenerator.marginVertical, 0);
+        canvas.showTextAligned(Element.ALIGN_RIGHT, "Version " + getLocalizedString("version") + " • " + getLocalizedString("date") + " • " + getLocalizedString("game") + " • http://auxc.de/18w", getRightX(), PDFGenerator.marginVertical, 0);
+        canvas.endText();
+    }
+
+    /**
      * Data structure holding header properties of a single entry
      */
     protected class HeaderProperties {

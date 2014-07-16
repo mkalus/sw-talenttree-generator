@@ -71,6 +71,9 @@ public class PageGeneratorCareer extends AbstractPageGenerator {
         } catch (Exception e) {
             throw new Exception("Error while creating talent list in " + data.get("id") + ": " + e.getMessage());
         }
+
+        // write footer
+        addFooter();
     }
 
     /**
