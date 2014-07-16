@@ -242,8 +242,6 @@ public class PDFGenerator {
         } catch (Exception e) {
             throw new Exception("Error loading data file:" + e.getMessage());
         }
-
-        //TODO: add stuff here
     }
 
     public void generate() throws Exception {
@@ -251,6 +249,10 @@ public class PDFGenerator {
         Document document = new Document(pageSizeValue, marginHorizontal, marginHorizontal, marginVertical, marginVertical);
         PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(getFileName()));
         document.open();
+
+        document.addAuthor("Maximilian Kalus");
+        document.addCreator("Star Wars Talent Tree Generator, see https://github.com/mkalus/sw-talenttree-generator");
+        document.addTitle(strings.getProperty("PDFTitle", "Star Wars Talent Trees"));
 
         // iterate data files to generate PDF
         for (Object o : this.data) {
