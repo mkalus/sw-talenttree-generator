@@ -4,6 +4,7 @@ for RPG Edge of the Empire and Age of Rebellion
 
 This program enables you to automatically create talent tree PDFs for the new role playing game of Star Wars by FFG.
 You need Java to run the program.
+Example file (German talents): https://dl.dropboxusercontent.com/u/9102471/StarWars/Talente_SW_ARdI.pdf
 
 Current status:
 - runs on command line, no fancy GUI
@@ -20,6 +21,7 @@ Running Star Wars PDF Talent Tree Generator
 ===========================================
 
 Download sw-talenttree-generator-all.zip and unzip it.
+URL: https://dl.dropboxusercontent.com/u/9102471/StarWars/sw-talenttree-generator-all.zip
 
 There will be a jar file and several data files. Run the jar with -h option to see how the program works:
 java -jar sw-talenttree-generator.jar -h
