@@ -15,5 +15,12 @@
                 <include>*.yaml</include>
             </includes>
         </fileSet>
+        <fileSet>
+            <directory>.</directory>
+            <outputDirectory>SWTalentTreeGenerator</outputDirectory>
+            <includes>
+                <include>Readme.txt</include>
+            </includes>
+        </fileSet>
     </fileSets>
 </assembly>
