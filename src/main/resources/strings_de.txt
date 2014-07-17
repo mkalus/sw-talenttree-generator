@@ -13,6 +13,7 @@ PDFTitle = Star Wars am Rande des Imperiums: Talentbäume
 FileName = Talente_SW_ARdI
 Active = Aktiv
 Passive = Passiv
+ForcePowerWedge = Machtsonderfähigkeit
 Ranked = Ränge
 Cost = Kosten:
 CareerSkills = Berufsfertigkeiten
@@ -47,6 +48,10 @@ Mechanic = Mechaniker
 OutlawTech = Outlaw-Techniker
 Slicer = Hacker
 ForceSensitiveExile = Machtsensitiver im Exil
+ForcePower = Machtfertigkeiten
+ForceSense = Gespür
+ForceInfluence = Beherrschung
+ForceMove = Telekinese
 
 #######################################################################################################################
 Skills
@@ -397,7 +402,26 @@ UncannyReactions = Pro Talentrang bekommst du einen |#B | in den Pool aller Wach
 UncannySensesData = ÜBERNATÜRLICHE\nWAHRNEHMUNG|144|P|R
 UncannySenses = Pro Talentrang bekommst du einen |#B | in den Pool aller Wahrnehmungsproben.
 
+#Force Powers
+ControlSense1 = Andauernder Effekt: Ein |#C | wird angelegt. Ein Mal pro Runde kann der Machtnutzer bei einem Angriff gegen ihn die Schwierigkeit ein Mal aufwerten.
+ControlSense1Data = KONTROLLE|280|P|N
+ControlSense2Data = KONTROLLE|281|P|N
+ControlSense2 = Effekt: |#Z | wird ausgegeben. Der Machtnutzer spürt, was ein lebendiges Ziel in Nahkampfreichweite gerade denkt.
+ControlSense3 = Andauernder Effekt: Ein |#C | wird angelegt. Ein Mal pro Runde kann der Machtnutzer bei einem seiner Angriffe die Begabung ein Mal aufwerten.
+ControlSense3Data = KONTROLLE|281|P|N
+DurationSenseData = WIRKUNGSDAUER|281|P|N
+DurationSense = Die andauernden Effekte von Gespür können ein weiteres Mal pro Runde ausgelöst werden.
+InfluenceBasicPowerData = GESPÜR-BASISFORM|280|P|N
+InfluenceBasicPower = Der Machtbenutzer spürt die Macht, die das ganze Universum umgibt und durchdringt.\nDer Benutzer kann |#Z | ausgeben, um jedes Lebewesen in kurzer Reichweite zu spüren (intelligentes und tierisches Leben).\nDer Benutzer kann |#Z | ausgeben, um den Gemütszustand eines lebendigen Ziels in Nahkampfreichweite zu erspüren.
+MagnitudeSenseData = AUSMASS|281|P|R
+MagnitudeSense = Der Machtnutzer kann ein |#Z | ausgeben, um gekaufter Ausmaß-Aufwertung den Effekt der Fähigkeit auf ein weiteres Ziel auszudehnen.
+RangeSenseData = REICHWEITE|281|P|R
+RangeSense = Der Machtnutzer kann ein |#Z | ausgeben, um die Reichweite der Fähigkeit um 1 Kategorie pro gekaufter Reichweiten-Aufwertung zu erhöhen.
+StrengthSense = Beim Einsatz der andauernden Effekte von Gespür wird der Würfelpool zwei Mal statt einmal aufgewertet.
+StrengthSenseData = STÄRKE|281|P|N
+
 #######################################################################################################################
 #Other texts - can be formatted like above, line breaks with \n
 #######################################################################################################################
 descriptionUniversalForceSensitiveExile = |*Du erhältst Machtwert 1.
+descriptionForcePowers = Voraussetzungen: |*Machtwert mindestens 1

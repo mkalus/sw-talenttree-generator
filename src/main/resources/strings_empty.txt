@@ -13,6 +13,7 @@ PDFTitle = Star Wars Talent Trees
 FileName =
 Active =
 Passive =
+ForcePowerWedge =
 Ranked =
 Cost =
 CareerSkills =
@@ -47,6 +48,10 @@ Mechanic =
 OutlawTech =
 Slicer =
 ForceSensitiveExile =
+ForcePower =
+ForceSense =
+ForceInfluence =
+ForceMove =
 
 #######################################################################################################################
 #Skills
@@ -405,3 +410,4 @@ UncannySenses = TODO
 #Other texts - can be formatted like above, line breaks with \n
 #######################################################################################################################
 descriptionUniversalForceSensitiveExile = |*TODO.
+descriptionForcePowers = |*TODO

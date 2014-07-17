@@ -13,6 +13,7 @@ PDFTitle = Star Wars Edge of the Empire Talent Trees
 FileName = Talents_SW_EotE
 Active = Active
 Passive = Passive
+ForcePowerWedge = Force Power
 Ranked = Ranked
 Cost = Costs:
 CareerSkills = Career Skills
@@ -47,6 +48,10 @@ Mechanic = Mechanic
 OutlawTech = Outlaw Tech
 Slicer = Slicer
 ForceSensitiveExile = Force Sensitive Exile
+ForcePower = Force Power
+ForceSense = Sense
+ForceInfluence = Influence
+ForceMove = Move
 
 #######################################################################################################################
 Skills
@@ -406,3 +411,4 @@ UncannySenses = TODO
 #Other texts - can be formatted like above, line breaks with \n
 #######################################################################################################################
 descriptionUniversalForceSensitiveExile = |*TODO.
+descriptionForcePowers = Prerequisites: |*Force Rating 1+

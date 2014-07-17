@@ -8,6 +8,8 @@ import java.text.Collator;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * PDF Generator for Star Wars Talent sheets
@@ -57,14 +59,35 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         }
         canvas.restoreState();
 
+        // prepare regex patters
+        Pattern multiColsPattern = Pattern.compile("\\*([1-4])");
+        Pattern customCostPattern = Pattern.compile("\\|([0-9]+)");
+
         // add talents
         try {
             int row = 0;
             for (Object oRow : (ArrayList) data.get("talents")) {
                 int col = 0;
                 for (String talent : (ArrayList<String>) oRow) {
-                    addTalent(row, col, talent);
-                    col++;
+                    // parse talent string
+                    int multiCols = 1;
+                    int customCost = -1;
+                    // first find multiple columns
+                    Matcher matcher = multiColsPattern.matcher(talent);
+                    if (matcher.find()) {
+                        // found multi column directive
+                        multiCols = new Integer(matcher.group(1));
+                        talent = matcher.replaceAll("");
+                    }
+                    // then find custom cost
+                    matcher = customCostPattern.matcher(talent);
+                    if (matcher.find()) {
+                        // found multi column directive
+                        customCost = new Integer(matcher.group(1));
+                        talent = matcher.replaceAll("");
+                    }
+                    addTalent(row, col, talent, multiCols, customCost);
+                    col += multiCols;
                 }
                 row++;
             }
@@ -216,21 +239,23 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         } else { // vertical
             // add half width of box
             x += PDFGenerator.talentBoxWidth/2 - PDFGenerator.talentPathStroke/2;
-            y -= PDFGenerator.talentBoxHeight + PDFGenerator.talentBoxStroke;
+            y -= PDFGenerator.talentBoxHeight;
             // vertical
             canvas.moveTo(x, y + PDFGenerator.verticalSpacing);
-            canvas.lineTo(x, y - PDFGenerator.talentBoxStroke - PDFGenerator.wedgeOffset); //  PDFGenerator.verticalSpacing - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke
+            canvas.lineTo(x, y - PDFGenerator.talentBoxStroke - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke); //  PDFGenerator.verticalSpacing - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke
             canvas.stroke();
         }
     }
 
     /**
      * Add single talent in box
-     * @param row
-     * @param col
-     * @param key
+     * @param row row to print talent in
+     * @param col column to print talent in
+     * @param key key for talent information
+     * @param multiCols span multiple columns or 1
+     * @param customCost custom cost of talent (instead of default) - 0 means box will not be printed
      */
-    protected void addTalent(int row, int col, String key) throws Exception {
+    protected void addTalent(int row, int col, String key, int multiCols, int customCost) throws Exception {
         // get data
         HeaderProperties headerProperties = parseHeaderProperty(key);
 
@@ -242,17 +267,27 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         float x = calculateColOffset(col);
         float y = calculateRowOffset(row);
 
+        // sanity check for multiple columns
+        if (multiCols < 1) multiCols = 1;
+        else if (multiCols > 4) multiCols = 4;
+
+        // box width and height
+        float talentBoxWidth = PDFGenerator.talentBoxWidth * multiCols + calculateHorizontalSpacing() * (multiCols-1);
+        float talentBoxHeight = PDFGenerator.talentBoxHeight;
+
         // draw shapes
         canvas.saveState();
         // draw outer rectangle
-        drawTalentRectangle(bgColor, x, y, PDFGenerator.talentBoxWidth, PDFGenerator.talentBoxHeight);
+        drawTalentRectangle(bgColor, x, y, talentBoxWidth, talentBoxHeight);
         // draw left footer shape
-        float yFooterBoxOffset = y - PDFGenerator.talentBoxHeight + PDFGenerator.talentBoxStroke;
-        drawFooterShape(bgColor, x + PDFGenerator.wedgeOffset + PDFGenerator.talentBoxStroke, y - PDFGenerator.talentBoxHeight + PDFGenerator.talentBoxStroke, 25);
+        float yFooterBoxOffset = y - talentBoxHeight + PDFGenerator.talentBoxStroke;
+        if (customCost != 0) {
+            drawFooterShape(bgColor, x + PDFGenerator.wedgeOffset + PDFGenerator.talentBoxStroke, y - talentBoxHeight + PDFGenerator.talentBoxStroke, 25);
+        }
         // draw right footer shape
-        drawFooterShape(bgColor, x + PDFGenerator.talentBoxWidth - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke - 50, y - PDFGenerator.talentBoxHeight + PDFGenerator.talentBoxStroke, 50);
+        drawFooterShape(bgColor, x + talentBoxWidth - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke - 50, y - talentBoxHeight + PDFGenerator.talentBoxStroke, 50);
         // draw header shape
-        drawHeaderShape(bgColor, x + PDFGenerator.talentBoxStroke*2.5f, y - PDFGenerator.talentBoxStroke*2.5f, PDFGenerator.talentBoxWidth - PDFGenerator.talentBoxStroke*5, headerTwoLine, headerProperties.status);
+        drawHeaderShape(bgColor, x + PDFGenerator.talentBoxStroke*2.5f, y - PDFGenerator.talentBoxStroke*2.5f, talentBoxWidth - PDFGenerator.talentBoxStroke*5, headerTwoLine, headerProperties.status);
         canvas.restoreState();
 
         // draw text
@@ -277,35 +312,39 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         // draw page
         canvas.showTextAligned(Element.ALIGN_CENTER, headerProperties.page, x + PDFGenerator.wedgeOffset + PDFGenerator.talentBoxStroke + 25f/2, textOffsetY, 0);
         // draw costs
-        canvas.showTextAligned(Element.ALIGN_LEFT, getLocalizedString("Cost") + " " + (row+1)*5, x + PDFGenerator.talentBoxWidth - PDFGenerator.talentBoxStroke - 50, textOffsetY, 0);
+        if (customCost != 0) {
+            if (customCost == -1) customCost = (row + 1) * 5;
+            canvas.showTextAligned(Element.ALIGN_LEFT, getLocalizedString("Cost") + " " + customCost, x + talentBoxWidth - PDFGenerator.talentBoxStroke - 50, textOffsetY, 0);
+        }
         canvas.endText();
 
         // draw talent text
         canvas.setColorFill(BaseColor.BLACK);
-        PdfPTable table = getTalentCell(key, 9f);
+        PdfPTable table = getTalentCell(key, talentBoxWidth, 9f);
         // too large?
-        float max = y - PDFGenerator.talentBoxHeight;
+        float max = y - talentBoxHeight;
         if (table.getRowHeight(0) > offSetYTalentText - max - 2 * PDFGenerator.wedgeOffset)
-            table = getTalentCell(key, 8.5f); // create smaller cell
+            table = getTalentCell(key, talentBoxWidth, 8.5f); // create smaller cell
         if (table.getRowHeight(0) > offSetYTalentText - max - 2 * PDFGenerator.wedgeOffset)
-            table = getTalentCell(key, 7.5f); // create tiny cell
+            table = getTalentCell(key, talentBoxWidth, 7.5f); // create tiny cell
         table.writeSelectedRows(0, -1, x + PDFGenerator.talentBoxStroke*1.5f, offSetYTalentText, canvas);
     }
 
     /**
      * get celled talent text
      * @param key
+     * @param talentBoxWidth
      * @param fontSize
      * @return
      * @throws Exception
      */
-    protected PdfPTable getTalentCell(String key, float fontSize) throws Exception {
+    protected PdfPTable getTalentCell(String key, float talentBoxWidth, float fontSize) throws Exception {
         // get phrase
         Phrase phrase = parseTextProperty(key, fontSize, true);
 
         // table text
         PdfPTable table = new PdfPTable(1);
-        table.setTotalWidth(PDFGenerator.talentBoxWidth - PDFGenerator.talentBoxStroke*3);
+        table.setTotalWidth(talentBoxWidth - PDFGenerator.talentBoxStroke*3);
         table.setLockedWidth(true);
         PdfPCell cell = new PdfPCell(phrase);
         cell.setBorder(0);

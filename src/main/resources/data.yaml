@@ -1,4 +1,7 @@
-# Career: Explorer/Fringer
+# Talents per column
+# Multiple columns like this: InfluenceBasicPower*4
+# Custom cost like this: InfluenceBasicPower|10
+# Custom cost and multi cols like this: InfluenceBasicPower|10*4
 ---
 id: ExplorerFringer
 type: de.beimax.talenttree.PageGeneratorCareer
@@ -651,3 +654,69 @@ talent_paths:
   - [1,1,1]
   - [1,1,1,1]
   - [1,1,1]
+---
+id: ForcePowerSense
+type: de.beimax.talenttree.PageGeneratorForce
+header: ForcePower
+subheader: ForceSense
+descriptiveText: descriptionForcePowers
+talents:
+  - [InfluenceBasicPower|10*4]
+  - [ControlSense1|10*2, ControlSense2|10*2]
+  - [DurationSense|10*2, RangeSense|5, MagnitudeSense|5]
+  - [StrengthSense|10*2, RangeSense|10, MagnitudeSense|10]
+  - [ControlSense3|10*2, RangeSense|10, MagnitudeSense|10]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [0,0,0]
+---
+id: ForcePowerInfluence
+type: de.beimax.talenttree.PageGeneratorForce
+header: ForcePower
+subheader: ForceInfluence
+descriptiveText: descriptionForcePowers
+talents:
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+talent_paths:
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
+---
+id: ForcePowerMove
+type: de.beimax.talenttree.PageGeneratorForce
+header: ForcePower
+subheader: ForceMove
+descriptiveText: descriptionForcePowers
+talents:
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+  - [Dummy, Dummy, Dummy, Dummy]
+talent_paths:
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
+  - [0,0,0,0]
+  - [0,0,0]
