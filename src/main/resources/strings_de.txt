@@ -374,27 +374,27 @@ WheelAndDealData = HANDEL UND WANDEL|138|P|R
 WheelAndDeal = Wenn du Waren auf legalem Weg verkaufst, erzielst du pro Talentrang 10% mehr Credits.
 
 #Force talents
-BalanceData = INNERES\nGLEICHGEWICHT|111|A|N
+BalanceData = INNERES\nGLEICHGEWICHT|138|A|N
 Balance = Wenn du am Ende einer Begegnung Erschöpfung abbaust, kannst du pro Punkt Machtwert einen |#C | zu deinem Pool hinzufügen. Für jedes gewürfelte |#Z | baust du 1 zusätzliche Erschöpfung ab.
-ForceRatingData = MACHTWERT|111|P|R
+ForceRatingData = MACHTWERT|139|P|R
 ForceRating = Dein Machtwert steigt um 1.
-InsightData = ERKENNTNIS|111|P|R
+InsightData = ERKENNTNIS|136|P|R
 Insight = Wahrnehmung und Disziplin werden für dich zu Berufsfertigkeiten.
-OverwhelmEmotionsData = GEFÜHLE\nÜBERWÄLTIGEN|111|P|N
+OverwhelmEmotionsData = GEFÜHLE\nÜBERWÄLTIGEN|137|P|N
 OverwhelmEmotions = Pro Punkt in Machtwert darfst du einen |#C | zu dem Pool aller Charme-, Einschüchterungs- und Täuschungsproben hinzufügen. |#Z | und |#z | zählen bei manchen Proben als |#s | und bei anderen als |#f|.
-SenseDangerData = GEFAHRENSINN|111|A|N
+SenseDangerData = GEFAHRENSINN|137|A|N
 SenseDanger = Ein Mal pro Spielsitzung darfst du aus dem Pool einer Probe |#bb | entfernen.
-SenseEmotionsData = EMPATHISCHES\nGESPÜR|111|P|N
+SenseEmotionsData = EMPATHISCHES\nGESPÜR|135|P|N
 SenseEmotions = Du bekommst ein |#B | in den Pool aller Charme-, Einschüchterungs- und Täuschungsproben, es sei denn, das Ziel ist immun gegen Machtfähigkeiten.
-SixthSenseData = SECHSTER SINN|111|P|N
+SixthSenseData = SECHSTER SINN|142|P|N
 SixthSense = Du bekommst +1 Verteidigung gegen Fernkampf.
-SuperiorReflexesData = ÜBERMENSCHLICHE\nREFLEXE|111|P|N
+SuperiorReflexesData = ÜBERMENSCHLICHE\nREFLEXE|144|P|N
 SuperiorReflexes = Du bekommst +1 Verteidigung gegen Nahkampf.
-TouchOfFateData = WINK DES SCHICKSALS|111|A|N
+TouchOfFateData = WINK DES SCHICKSALS|145|A|N
 TouchOfFate = Ein Mal pro Spielsitzung bekommst du bei einer beliebigen Probe |#BB | in den Pool.
-UncannyReactionsData = ÜBERNATÜRLICHE\nWACHSAMKEIT|111|P|R
+UncannyReactionsData = ÜBERNATÜRLICHE\nWACHSAMKEIT|144|P|R
 UncannyReactions = Pro Talentrang bekommst du einen |#B | in den Pool aller Wachsamkeitsproben.
-UncannySensesData = ÜBERNATÜRLICHE\nWAHRNEHMUNG|111|P|R
+UncannySensesData = ÜBERNATÜRLICHE\nWAHRNEHMUNG|144|P|R
 UncannySenses = Pro Talentrang bekommst du einen |#B | in den Pool aller Wahrnehmungsproben.
 
 #######################################################################################################################
