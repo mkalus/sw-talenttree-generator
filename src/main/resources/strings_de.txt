@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 1
-date = 16.07.2014
+version = 2
+date = 17.07.2014
 game = Am Rande des Imperiums
 copyright = (c) Fantasy Flight Games and Heidelberger Spiele
 PDFTitle = Star Wars am Rande des Imperiums: Talentbäume
