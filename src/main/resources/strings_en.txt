@@ -407,6 +407,54 @@ UncannyReactions = TODO
 UncannySensesData = TITLE|000|P|R
 UncannySenses = TODO
 
+#Force Powers
+ControlSense1 = TODO
+ControlSense1Data = TITLE|000|P|N
+ControlSense2Data = TITLE|000|P|N
+ControlSense2 = TODO
+ControlSense3 = TODO
+ControlSense3Data = TITLE|000|P|N
+DurationSenseData = TITLE|000|P|N
+DurationSense = TODO
+MagnitudeSenseData = TITLE|000|P|R
+MagnitudeSense = TODO
+RangeSenseData = TITLE|000|P|R
+RangeSense = TODO
+SenseBasicPowerData = TITLE|000|P|N
+SenseBasicPower = TODO
+StrengthSense = TODO
+StrengthSenseData = TITLE|000|P|N
+
+ControlInfluence1Data = TITLE|000|P|N
+ControlInfluence1 = TODO
+ControlInfluence2 = TODO
+ControlInfluence2Data = TITLE|000|P|N
+DurationInfluenceData = TITLE|000|P|R
+DurationInfluence = TODO
+InfluenceBasicPowerData = TITLE|000|P|N
+InfluenceBasicPower = TODO
+MagnitudeInfluenceData = TITLE|000|P|R
+MagnitudeInfluence = TODO
+RangeInfluenceData = TITLE|000|P|R
+RangeInfluence = TODO
+StrengthInfluenceData = TITLE|000|P|N
+StrengthInfluence = TODO
+
+ControlMove1Data = TITLE|000|P|N
+ControlMove1 = TODO
+ControlMove2Data = TITLE|000|P|N
+ControlMove2 = TODO
+ControlMove3Data = TITLE|000|P|N
+ControlMove3 = TODO
+MagnitudeMoveData = TITLE|000|P|R
+MagnitudeMove = TODO
+MoveBasicPowerData = TITLE|000|P|N
+MoveBasicPower = TODO
+RangeMoveData = TITLE|000|P|R
+RangeMove = TODO
+StrengthMoveData = TITLE|000|P|R
+StrengthMove = TODO
+
 #######################################################################################################################
 #Other texts - can be formatted like above, line breaks with \n
 #######################################################################################################################

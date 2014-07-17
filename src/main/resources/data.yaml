@@ -661,7 +661,7 @@ header: ForcePower
 subheader: ForceSense
 descriptiveText: descriptionForcePowers
 talents:
-  - [InfluenceBasicPower|10*4]
+  - [SenseBasicPower|10*4]
   - [ControlSense1|10*2, ControlSense2|10*2]
   - [DurationSense|10*2, RangeSense|5, MagnitudeSense|5]
   - [StrengthSense|10*2, RangeSense|10, MagnitudeSense|10]
@@ -683,21 +683,21 @@ header: ForcePower
 subheader: ForceInfluence
 descriptiveText: descriptionForcePowers
 talents:
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
+  - [InfluenceBasicPower|10*4]
+  - [RangeInfluence|5, MagnitudeInfluence|5, ControlInfluence1|10*2]
+  - [ControlInfluence2|15*3, StrengthInfluence|10]
+  - [RangeInfluence|10, MagnitudeInfluence|5, DurationInfluence|5, DurationInfluence|5]
+  - [RangeInfluence|10, MagnitudeInfluence|5, DurationInfluence|5, DurationInfluence|5]
 talent_paths:
   - [0,0,0]
-  - [0,0,0,0]
+  - [1,1,0,1]
   - [0,0,0]
-  - [0,0,0,0]
+  - [1,1,0,1]
   - [0,0,0]
-  - [0,0,0,0]
-  - [0,0,0]
-  - [0,0,0,0]
-  - [0,0,0]
+  - [1,1,0,1]
+  - [0,0,1]
+  - [1,1,1,1]
+  - [0,0,1]
 ---
 id: ForcePowerMove
 type: de.beimax.talenttree.PageGeneratorForce
@@ -705,18 +705,18 @@ header: ForcePower
 subheader: ForceMove
 descriptiveText: descriptionForcePowers
 talents:
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
-  - [Dummy, Dummy, Dummy, Dummy]
+  - [MoveBasicPower|10*4]
+  - [MagnitudeMove|5, StrengthMove|10, RangeMove|5, RangeMove|5]
+  - [MagnitudeMove|5, StrengthMove|10, ControlMove1|10*2]
+  - [MagnitudeMove|10, StrengthMove|15, ControlMove2|5, RangeMove|15]
+  - [MagnitudeMove|10, StrengthMove|20, ControlMove3|15*2]
 talent_paths:
   - [0,0,0]
-  - [0,0,0,0]
+  - [1,1,1,1]
   - [0,0,0]
-  - [0,0,0,0]
+  - [1,1,1,1]
   - [0,0,0]
-  - [0,0,0,0]
+  - [1,1,1,1]
   - [0,0,0]
-  - [0,0,0,0]
+  - [1,1,1,1]
   - [0,0,0]
