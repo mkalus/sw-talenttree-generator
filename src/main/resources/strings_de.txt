@@ -21,6 +21,7 @@ BonusSkills = Berufsfertigkeiten {0}
 #######################################################################################################################
 Careers
 #######################################################################################################################
+Universal = Allgemein
 BountyHunter = Kopfgeldjäger
 Assassin = Attentäter
 Gadgeteer = PowerTech
@@ -45,6 +46,7 @@ Technician = Techniker
 Mechanic = Mechaniker
 OutlawTech = Outlaw-Techniker
 Slicer = Hacker
+ForceSensitiveExile = Machtsensitiver im Exil
 
 #######################################################################################################################
 Skills
@@ -230,7 +232,7 @@ LethalBlows = Bei jeder kritischen Verletzung, die du verursachst, addierst du +
 LethalBlowsData = TODESSTOSS|144|P|R
 LetsRideData = AUFSATTELN|132|A|N
 LetsRide = Einmal pro Runde kannst du als Nebenaktion auf ein Fahrzeug oder Reittier auf- oder von ihm absteigen oder innerhalb eines Fahrzeugs oder Raumschiffs in Cockpit oder in die Waffenstation wechseln.
-MasterDoctorData =  CHEFARZT|134|A|N
+MasterDoctorData = CHEFARZT|134|A|N
 MasterDoctor = Ein Mal pro Runde kannst du 2 Erschöpfung hinnehmen, um die Schwierigkeit einer Medizinprobe um 1 zu senken.
 MasterMerchant = Beim Kaufen oder Verkaufen von Waren sowie beim Abbauen und Eingehen von Verpflichtungen kannst du 2 Erschöpfung hinnehmen, um den Preis der Ware um 25% zu senken bzw. zu erhöhen oder die Verpflichtung zusätzlich um 1 zu reduzieren.bzw. um 1 weniger zu erhöhen.
 MasterMerchantData = KÖNIG DER HÄNDLER|138|A|N
@@ -287,7 +289,7 @@ QuickDraw = Einmal pro Runde kannst du eine Waffe oder einen griffbereiten Gegen
 QuickStrikeData = ERSTSCHLAG|136|P|R
 QuickStrike = Wenn du einen Gegner angreifst, der selbst in diesem Kampf noch nicht gehandelt hat, erhältst du dafür einen zusätzlichen |#B | pro Talentrang.
 RapidReactionData = BLITZSCHNELLE\nREFLEXE|134|A|R
-RapidReaction = Du kannst X Erschöpfung hinnehmen (X  darf nicht höher als dein Talentrang sein), um bei einer Initiativeprobe X zusätzliche |#s | zu bekommen.
+RapidReaction = Du kannst X Erschöpfung hinnehmen (X darf nicht höher als dein Talentrang sein), um bei einer Initiativeprobe X zusätzliche |#s | zu bekommen.
 RapidRecoveryData = SCHNELLE ERHOLUNG|142|P|R
 RapidRecovery = Wenn du dich am Ende einer Begegnung von Erschöpfung erholst, wird pro Talentrang 1 zusätzlicher Punkt Erschöpfung abgebaut.
 RedundantSystemsData = REDUNDANTE SYSTEME|141|A|N
@@ -299,7 +301,7 @@ Resolve = Immer wenn du unfreiwillig Erschöpfung erleidest, wird diese pro Tale
 RespectedScholar = Bei Fertigkeitsproben, die du im Zusammenhang mit Universitäten, Bibliotheken, Archiven und dergleichen ablegst, wird die Schwierigkeit einmal pro Talentrang abgewertet.
 RespectedScholarData = RENOMMIERTER\nWISSENSCHAFTLER|141|P|R
 ScathingTiradeData = VERLETZENDE WORTE|141|A|N
-ScathingTirade = Du kannst die Aktion Verletzende Worte ausführen: Lege eine |*mittelschwere (|#dd|*) Einschüchterungs-probe | ab. Für jedes  |#s | erleidet ein Gegner in kurzer Reichweite 1 Erschöpfung. Du kannst ein |#a | ausgeben, damit einer der Betroffenen 1 weitere Erschöpfung erleidet.
+ScathingTirade = Du kannst die Aktion Verletzende Worte ausführen: Lege eine |*mittelschwere (|#dd|*) Einschüchterungs-probe | ab. Für jedes |#s | erleidet ein Gegner in kurzer Reichweite 1 Erschöpfung. Du kannst ein |#a | ausgeben, damit einer der Betroffenen 1 weitere Erschöpfung erleidet.
 ScathingTiradeImprovedData = VERBESSERTE\nVERLETZENDE WORTE|141|P|N
 ScathingTiradeImproved = Jeder von deinen von Beflügelnden Worten betroffene Gegner bekommt |#b | auf alle Fertigkeitsproben für so viele Runden, wie du Ränge in Führungsqualität hast.
 ScathingTiradeSupremeData = MEISTERHAFTE\nVERLETZENDE WORTE|141|A|N
@@ -371,3 +373,31 @@ WellRounded = Wähle zwei Fertigkeiten. Diese werden permanent Berufsfertigkeite
 WheelAndDealData = HANDEL UND WANDEL|138|P|R
 WheelAndDeal = Wenn du Waren auf legalem Weg verkaufst, erzielst du pro Talentrang 10% mehr Credits.
 
+#Force talents
+BalanceData = INNERES\nGLEICHGEWICHT|111|A|N
+Balance = Wenn du am Ende einer Begegnung Erschöpfung abbaust, kannst du pro Punkt Machtwert einen |#C | zu deinem Pool hinzufügen. Für jedes gewürfelte |#Z | baust du 1 zusätzliche Erschöpfung ab.
+ForceRatingData = MACHTWERT|111|P|R
+ForceRating = Dein Machtwert steigt um 1.
+InsightData = ERKENNTNIS|111|P|R
+Insight = Wahrnehmung und Disziplin werden für dich zu Berufsfertigkeiten.
+OverwhelmEmotionsData = GEFÜHLE\nÜBERWÄLTIGEN|111|P|N
+OverwhelmEmotions = Pro Punkt in Machtwert darfst du einen |#C | zu dem Pool aller Charme-, Einschüchterungs- und Täuschungsproben hinzufügen. |#Z | und |#z | zählen bei manchen Proben als |#s | und bei anderen als |#f|.
+SenseDangerData = GEFAHRENSINN|111|A|N
+SenseDanger = Ein Mal pro Spielsitzung darfst du aus dem Pool einer Probe |#bb | entfernen.
+SenseEmotionsData = EMPATHISCHES\nGESPÜR|111|P|N
+SenseEmotions = Du bekommst ein |#B | in den Pool aller Charme-, Einschüchterungs- und Täuschungsproben, es sei denn, das Ziel ist immun gegen Machtfähigkeiten.
+SixthSenseData = SECHSTER SINN|111|P|N
+SixthSense = Du bekommst +1 Verteidigung gegen Fernkampf.
+SuperiorReflexesData = ÜBERMENSCHLICHE\nREFLEXE|111|P|N
+SuperiorReflexes = Du bekommst +1 Verteidigung gegen Nahkampf.
+TouchOfFateData = WINK DES SCHICKSALS|111|A|N
+TouchOfFate = Ein Mal pro Spielsitzung bekommst du bei einer beliebigen Probe |#BB | in den Pool.
+UncannyReactionsData = ÜBERNATÜRLICHE\nWACHSAMKEIT|111|P|R
+UncannyReactions = Pro Talentrang bekommst du einen |#B | in den Pool aller Wachsamkeitsproben.
+UncannySensesData = ÜBERNATÜRLICHE\nWAHRNEHMUNG|111|P|R
+UncannySenses = Pro Talentrang bekommst du einen |#B | in den Pool aller Wahrnehmungsproben.
+
+#######################################################################################################################
+#Other texts - can be formatted like above, line breaks with \n
+#######################################################################################################################
+descriptionUniversalForceSensitiveExile = |*Du erhältst Machtwert 1.

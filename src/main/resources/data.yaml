@@ -629,3 +629,25 @@ talent_paths:
   - [1,1,1]
   - [1,1,1,1]
   - [1,1,1]
+---
+id: UniversalForceSensitiveExile
+type: de.beimax.talenttree.PageGeneratorSimple
+header: Universal
+subheader: ForceSensitiveExile
+descriptiveText: descriptionUniversalForceSensitiveExile
+talents:
+  - [UncannySenses, Insight, Forager, UncannyReactions]
+  - [ConvincingDemeanor, OverwhelmEmotions, IntenseFocus, QuickDraw]
+  - [SenseDanger, SenseEmotions, Balance, TouchOfFate]
+  - [StreetSmarts, UncannySenses, UncannyReactions, StreetSmarts]
+  - [SixthSense, ForceRating, Dedication, SuperiorReflexes]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,1]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,1]

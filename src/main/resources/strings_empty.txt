@@ -21,6 +21,7 @@ BonusSkills =
 #######################################################################################################################
 #Careers
 #######################################################################################################################
+Universal =
 BountyHunter =
 Assassin =
 Gadgeteer =
@@ -45,6 +46,7 @@ Technician =
 Mechanic =
 OutlawTech =
 Slicer =
+ForceSensitiveExile =
 
 #######################################################################################################################
 #Skills
@@ -375,3 +377,31 @@ WellRounded = TODO
 WheelAndDealData = TITLE|000|P|R
 WheelAndDeal = TODO
 
+#Force talents
+BalanceData = TITLE|000|A|N
+Balance = TODO
+ForceRatingData = TITLE|000|P|R
+ForceRating = TODO
+InsightData = TITLE|000|P|R
+Insight = TODO
+OverwhelmEmotionsData = TITLE|000|P|N
+OverwhelmEmotions = TODO
+SenseDangerData = TITLE|000|A|N
+SenseDanger = TODO
+SenseEmotionsData = TITLE|000|P|N
+SenseEmotions = TODO
+SixthSenseData = TITLE|000|P|N
+SixthSense = TODO
+SuperiorReflexesData = TITLE|000|P|N
+SuperiorReflexes = TODO
+TouchOfFateData = TITLE|000|A|N
+TouchOfFate = TODO
+UncannyReactionsData = TITLE|000|P|R
+UncannyReactions = TODO
+UncannySensesData = TITLE|000|P|R
+UncannySenses = TODO
+
+#######################################################################################################################
+#Other texts - can be formatted like above, line breaks with \n
+#######################################################################################################################
+descriptionUniversalForceSensitiveExile = |*TODO.

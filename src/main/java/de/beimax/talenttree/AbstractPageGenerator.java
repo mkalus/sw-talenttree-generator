@@ -139,22 +139,22 @@ public abstract class AbstractPageGenerator {
 
     /**
      * Parse a string to PDF/itext phrase to be rendered later
-     * @param key
-     * @param sizeReduction 0-2 for smaller sizes (0 = default)
+     * @param key language key
+     * @param fontSize size of font
+     * @param narrowFonts use narrow fonts?
      * @return
      * @throws Exception
      */
-    protected Phrase parseTextProperty(String key, int sizeReduction) throws Exception {
-        float fontSize;
-        switch (sizeReduction) {
-            case 1: fontSize = 8.5f; break;
-            case 2: fontSize = 7.5f; break;
-            default: fontSize = 9;
-        }
-
+    protected Phrase parseTextProperty(String key, float fontSize, boolean narrowFonts) throws Exception {
         // define fonts
-        Font fontRegular = new Font(generator.getFontCondensedRegular(), fontSize);
-        Font fontBold = new Font(generator.getFontCondensedBold(), fontSize);
+        Font fontRegular, fontBold;
+        if (narrowFonts) {
+            fontRegular = new Font(generator.getFontCondensedRegular(), fontSize);
+            fontBold = new Font(generator.getFontCondensedBold(), fontSize);
+        } else {
+            fontRegular = new Font(generator.getFontRegular(), fontSize);
+            fontBold = new Font(generator.getFontBold(), fontSize);
+        }
         Font fontSymbol = new Font(generator.getFontSymbol(), fontSize);
 
         Phrase phrase = new Phrase();
@@ -163,6 +163,7 @@ public abstract class AbstractPageGenerator {
         // get localized element
         String localized = getLocalizedString(key);
         for (String part : localized.split("\\|")) {
+            if (part.length() == 0) continue; // make sure to not fire index out of range
             char first = part.charAt(0);
             char last = part.charAt(part.length()-1);
             switch (first) {
