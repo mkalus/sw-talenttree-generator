@@ -109,6 +109,12 @@ public class PDFGenerator {
     private Iterable<Object> data; // list of data objects to render
 
     /**
+     * language
+     */
+    @Option(name = "--lang", usage = "language (ignored when --strings is set)")
+    private String language = null;
+
+    /**
      * Constructor
      * @throws Exception
      */
@@ -214,8 +220,10 @@ public class PDFGenerator {
             if (!langFile.exists()) throw new Exception("Language file " + stringsFile + " not found.");
             langStream = new BufferedInputStream(new FileInputStream(langFile));
         } else {// load default
+            // language from parameters
+            if (this.language == null) this.language = Locale.getDefault().getLanguage();
             // resource for current locale?
-            URL langResource = getClass().getResource("/strings_" + Locale.getDefault().getLanguage() + ".txt");
+            URL langResource = getClass().getResource("/strings_" + this.language + ".txt");
             if (langResource == null) langResource = getClass().getResource("/strings_en.txt"); // fallback to English
             langStream = langResource.openStream();
         }
