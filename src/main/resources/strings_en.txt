@@ -1,4 +1,4 @@
-# English Strings file (TODO not finished yet)
+# English Strings file
 # This file contains the localized strings to be included in the PDF. It has a simple key = value format. Comment lines
 # start with #.
 
@@ -385,75 +385,75 @@ WheelAndDeal = When selling goods legally, gain 10% more credits per rank of Whe
 
 #Force talents
 BalanceData = BALANCE|000|A|N
-Balance = TODO
+Balance = When the character heals strain at the end of the encounter, he may add |#C | per Force Rating. He recovers additional strain equal to |#Z | generated.
 ForceRatingData = FORCE RATING|000|P|R
-ForceRating = TODO
+ForceRating = Gain +1 Force Rating.
 InsightData = INSIGHT|000|P|R
-Insight = TODO
+Insight = Perception and Discipline become career skills.
 OverwhelmEmotionsData = OVERWHELM EMOTIONS|000|P|N
-OverwhelmEmotions = TODO
+OverwhelmEmotions = May add |#C | per Force Rating to Charm, Coerce, or Deceit checks. |#Z | and |#z | add |#s | to some checks and |#f | to others.
 SenseDangerData = SENSE DANGER|000|A|N
-SenseDanger = TODO
+SenseDanger = Once per session, remove |#bb | from any 1 check.
 SenseEmotionsData = SENSE EMOTIONS|000|P|N
-SenseEmotions = TODO
+SenseEmotions = Add |#b | to all Charm, Coercion, and Deception checks unless the target is immune to Force Powers.
 SixthSenseData = SIXTH SENSE|000|P|N
-SixthSense = TODO
+SixthSense = Gain +1 ranged defense.
 SuperiorReflexesData = SUPERIOR REFLEXES|000|P|N
-SuperiorReflexes = TODO
+SuperiorReflexes = Gain +1 melee defense.
 TouchOfFateData = TOUCH OF FATE|000|A|N
-TouchOfFate = TODO
+TouchOfFate =  Once per session, add |#bb | to any one check.
 UncannyReactionsData = UNCANNY REACTIONS|000|P|R
-UncannyReactions = TODO
+UncannyReactions = Add |#b | per rank of Uncanny Reactions to all Vigilance checks,
 UncannySensesData = UNCANNY SENSES|000|P|R
-UncannySenses = TODO
+UncannySenses = Add |#b | per rank of Uncanny Senses to all Perception checks.
 
 #Force Powers
-ControlSense1 = TODO
+ControlSense1 = Ongoing effect: Commit |#C|. Once per round, when an attack targets the Force user, he upgrades the difficulty of the pool once.
 ControlSense1Data = CONTROL|000|P|N
 ControlSense2Data = CONTROL|000|P|N
-ControlSense2 = TODO
-ControlSense3 = TODO
+ControlSense2 = Effect: Spend |#Z|. The Force user senses the current thoughts of one living target with whom he is engaged.
+ControlSense3 = Ongoing effect: Commit |#C|. Once per round, when making a combat check, he upgrades the ability of that check once.
 ControlSense3Data = CONTROL|000|P|N
 DurationSenseData = DURATION|000|P|N
-DurationSense = TODO
+DurationSense = Sense’s ongoing effects may be triggered one additional time per round.
 MagnitudeSenseData = MAGNITUDE|000|P|R
-MagnitudeSense = TODO
+MagnitudeSense = Spend |#Z | to increase number of targets affected by power equal to magnitude upgrades purchased.
 RangeSenseData = RANGE|000|P|R
-RangeSense = TODO
+RangeSense = Spend |#Z | to increase power’s range by a number of range bands equal to range upgrades purchased.
 SenseBasicPowerData = SENSE BASIC POWER|000|P|N
-SenseBasicPower = TODO
-StrengthSense = TODO
+SenseBasicPower = The Force User can sense the Force interacting with the world around him.\nThe user may spend |#Z | to sense all living things within short range (including sentient and non-sentient beings).\nThe user may spend |#Z | to sense the current emotional state of one living target with whom he is engaged.
+StrengthSense = When using Sense’s ongoing effects, upgrade the pool twice, instead of once.
 StrengthSenseData = STRENGTH|000|P|N
 
 ControlInfluence1Data = CONTROL|000|P|N
-ControlInfluence1 = TODO
-ControlInfluence2 = TODO
+ControlInfluence1 = The Force user may make an opposed Discipline vs Discipline check combined with an Influence Power check. If the user spends |#Z | and succeeds on the check, he can force the target to adopt an emotional state or believe something untrue, lasting for 1 round or 5 minutes.
+ControlInfluence2 = When making a Coercion, Charm, Deception, Leadership, or Negotiation check, the Force user may roll an Influence Power check as part of his dice pool. He may spend |#Z | to gain |#s | or |#a | (user’s choice) on the check.
 ControlInfluence2Data = CONTROL|000|P|N
 DurationInfluenceData = DURATION|000|P|R
-DurationInfluence = TODO
+DurationInfluence = Spend |#Z | to increase duration by number of rounds (or minutes) equal to duration upgrades purchased.
 InfluenceBasicPowerData = INFLUENCE BASIC POWER|000|P|N
-InfluenceBasicPower = TODO
+InfluenceBasicPower = The character may attempt to guide, shape, and even twist the thoughts and feelings of others.\nSpecial Rule (|#Z|/|#z | use): When guiding and shaping thoughts, only |#z | may be used to generate negative emotions such as rage, fear, and hatred. Only |#Z | may be used to generate positive emotions such as peace, tranquility, and friendliness. Other emotions such as confusion can be generated with either |#Z | or |#z|.\nThe character may spend |#Z | to stress the mind of one living target he is engaged with, inflicting 1 strain.
 MagnitudeInfluenceData = MAGNITUDE|000|P|R
-MagnitudeInfluence = TODO
+MagnitudeInfluence = Spend |#Z | to increase number of targets affected by power equal to magnitude upgrades purchased.
 RangeInfluenceData = RANGE|000|P|R
-RangeInfluence = TODO
+RangeInfluence = Spend |#Z | to increase power’s range by a number of range bands equal to range upgrades purchased.
 StrengthInfluenceData = STRENGTH|000|P|N
-StrengthInfluence = TODO
+StrengthInfluence = When stressing the mind of a target, the character inflicts 2 strain.
 
 ControlMove1Data = CONTROL|000|P|N
-ControlMove1 = TODO
+ControlMove1 = The Force user can hurl objects to damage targets, by making a Discipline check combined with a Move Power check, dealing damage equal to 10 times silhouette.
 ControlMove2Data = CONTROL|000|P|N
-ControlMove2 = TODO
+ControlMove2 = The Force user can pull objects out of secure mountings or out of an opponent’s grasp.
 ControlMove3Data = CONTROL|000|P|N
-ControlMove3 = TODO
+ControlMove3 = The character can perform fine manipulation of items, allowing him to do whatever he would normally with his hands via this power at this power’s range.
 MagnitudeMoveData = MAGNITUDE|000|P|R
-MagnitudeMove = TODO
+MagnitudeMove = Spend |#Z | to increase number of targets affected by power equal to magnitude upgrades purchased.
 MoveBasicPowerData = MOVE BASIC POWER|000|P|N
-MoveBasicPower = TODO
+MoveBasicPower = The Force user can move small objects via the power of the Force.\nThe user may spend |#Z | to move one object of silhouette 0 that is within short range up to his maximum range. The default maximum range is short range.
 RangeMoveData = RANGE|000|P|R
-RangeMove = TODO
+RangeMove = Spend |#Z | to increase power’s range by a number of range bands equal to range upgrades purchased.
 StrengthMoveData = STRENGTH|000|P|R
-StrengthMove = TODO
+StrengthMove = Spend |#Z | to increase silhouette able to be targeted equal to strength upgrades purchased.
 
 #######################################################################################################################
 #Other texts - can be formatted like above, line breaks with \n
