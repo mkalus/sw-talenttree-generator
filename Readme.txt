@@ -8,9 +8,7 @@ Example file (German talents): https://dl.dropboxusercontent.com/u/9102471/StarW
 
 Current status:
 - runs on command line, no fancy GUI
-- German talent tree for Edge of the empire file finished (English, Age of Rebellion and other languages = TODO)
-- only "normal" talent trees supported currently, no force sensitive ones or vintage ones (in the works)
-- occupations from extensions are not included yet
+- German and English talent tree for Edge of the empire file finished (EotE base game only for now)
 
 Help would be appreciated :-)
 
