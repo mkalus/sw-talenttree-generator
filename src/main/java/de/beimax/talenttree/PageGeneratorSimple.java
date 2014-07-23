@@ -188,6 +188,40 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
     }
 
     /**
+     * draw paths between talents
+     * @param row
+     * @param col
+     * @param path
+     * @throws Exception
+     */
+    protected void addTalentPath(int row, int col, int path) throws Exception {
+        // ignore non valid paths
+        if (path != 1) return;
+
+        // calculate offsets
+        float x = calculateColOffset(col);
+        float y = calculateRowOffset((int) Math.floor(row / 2));
+
+        // vertical or horizontal
+        if (row % 2 == 0) { // horizontal
+            // add half height of box
+            y -= PDFGenerator.talentBoxHeight/2 + PDFGenerator.talentBoxStroke/2;
+            x += PDFGenerator.talentBoxWidth - PDFGenerator.talentBoxStroke;
+            canvas.moveTo(x, y);
+            canvas.lineTo(x + calculateHorizontalSpacing() + 2*PDFGenerator.talentBoxStroke, y);
+            canvas.stroke();
+        } else { // vertical
+            // add half width of box
+            x += PDFGenerator.talentBoxWidth/2 - PDFGenerator.talentPathStroke/2;
+            y -= PDFGenerator.talentBoxHeight;
+            // vertical
+            canvas.moveTo(x, y + PDFGenerator.verticalSpacing);
+            canvas.lineTo(x, y - PDFGenerator.talentBoxStroke - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke); //  PDFGenerator.verticalSpacing - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke
+            canvas.stroke();
+        }
+    }
+
+    /**
      * Add talent boxes
      * @throws Exception
      */
@@ -226,40 +260,6 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
             }
         } catch (Exception e) {
             throw new Exception("Error while creating talent list in " + data.get("id") + ": " + e.getMessage());
-        }
-    }
-
-    /**
-     * draw paths between talents
-     * @param row
-     * @param col
-     * @param path
-     * @throws Exception
-     */
-    protected void addTalentPath(int row, int col, int path) throws Exception {
-        // ignore non valid paths
-        if (path != 1) return;
-
-        // calculate offsets
-        float x = calculateColOffset(col);
-        float y = calculateRowOffset((int) Math.floor(row / 2));
-
-        // vertical or horizontal
-        if (row % 2 == 0) { // horizontal
-            // add half height of box
-            y -= PDFGenerator.talentBoxHeight/2 + PDFGenerator.talentBoxStroke/2;
-            x += PDFGenerator.talentBoxWidth - PDFGenerator.talentBoxStroke;
-            canvas.moveTo(x, y);
-            canvas.lineTo(x + calculateHorizontalSpacing() + 2*PDFGenerator.talentBoxStroke, y);
-            canvas.stroke();
-        } else { // vertical
-            // add half width of box
-            x += PDFGenerator.talentBoxWidth/2 - PDFGenerator.talentPathStroke/2;
-            y -= PDFGenerator.talentBoxHeight;
-            // vertical
-            canvas.moveTo(x, y + PDFGenerator.verticalSpacing);
-            canvas.lineTo(x, y - PDFGenerator.talentBoxStroke - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke); //  PDFGenerator.verticalSpacing - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke
-            canvas.stroke();
         }
     }
 
