@@ -41,59 +41,9 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         addDescriptiveText();
 
         // add talent paths
-        canvas.saveState();
-        canvas.setColorStroke(PDFGenerator.lineColor);
-        canvas.setLineWidth(PDFGenerator.talentPathStroke);
-        try {
-            int row = 0;
-            for (Object oRow : (ArrayList) data.get("talent_paths")) {
-                int col = 0;
-                for (int path : (ArrayList<Integer>) oRow) {
-                    addTalentPath(row, col, path);
-                    col++;
-                }
-                row++;
-            }
-        } catch (Exception e) {
-            throw new Exception("Error while creating talent paths in " + data.get("id") + ": " + e.getMessage());
-        }
-        canvas.restoreState();
-
-        // prepare regex patters
-        Pattern multiColsPattern = Pattern.compile("\\*([1-4])");
-        Pattern customCostPattern = Pattern.compile("\\|([0-9]+)");
-
+        addTalentPaths();
         // add talents
-        try {
-            int row = 0;
-            for (Object oRow : (ArrayList) data.get("talents")) {
-                int col = 0;
-                for (String talent : (ArrayList<String>) oRow) {
-                    // parse talent string
-                    int multiCols = 1;
-                    int customCost = -1;
-                    // first find multiple columns
-                    Matcher matcher = multiColsPattern.matcher(talent);
-                    if (matcher.find()) {
-                        // found multi column directive
-                        multiCols = new Integer(matcher.group(1));
-                        talent = matcher.replaceAll("");
-                    }
-                    // then find custom cost
-                    matcher = customCostPattern.matcher(talent);
-                    if (matcher.find()) {
-                        // found multi column directive
-                        customCost = new Integer(matcher.group(1));
-                        talent = matcher.replaceAll("");
-                    }
-                    addTalent(row, col, talent, multiCols, customCost);
-                    col += multiCols;
-                }
-                row++;
-            }
-        } catch (Exception e) {
-            throw new Exception("Error while creating talent list in " + data.get("id") + ": " + e.getMessage());
-        }
+        addTalents();
 
         // write footer
         addFooter();
@@ -211,6 +161,72 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         canvas.lineTo(x + 9.883f + offset, y - 11.765f);
         canvas.lineTo(x + 4 + offset, y - 5.883f);
         canvas.fill();
+    }
+
+    /**
+     * Add talent paths
+     * @throws Exception
+     */
+    protected void addTalentPaths() throws Exception {
+        canvas.saveState();
+        canvas.setColorStroke(PDFGenerator.lineColor);
+        canvas.setLineWidth(PDFGenerator.talentPathStroke);
+        try {
+            int row = 0;
+            for (Object oRow : (ArrayList) data.get("talent_paths")) {
+                int col = 0;
+                for (int path : (ArrayList<Integer>) oRow) {
+                    addTalentPath(row, col, path);
+                    col++;
+                }
+                row++;
+            }
+        } catch (Exception e) {
+            throw new Exception("Error while creating talent paths in " + data.get("id") + ": " + e.getMessage());
+        }
+        canvas.restoreState();
+    }
+
+    /**
+     * Add talent boxes
+     * @throws Exception
+     */
+    protected void addTalents() throws Exception {
+        // prepare regex patters
+        Pattern multiColsPattern = Pattern.compile("\\*([1-4])");
+        Pattern customCostPattern = Pattern.compile("\\|([0-9]+)");
+
+        // add talents
+        try {
+            int row = 0;
+            for (Object oRow : (ArrayList) data.get("talents")) {
+                int col = 0;
+                for (String talent : (ArrayList<String>) oRow) {
+                    // parse talent string
+                    int multiCols = 1;
+                    int customCost = -1;
+                    // first find multiple columns
+                    Matcher matcher = multiColsPattern.matcher(talent);
+                    if (matcher.find()) {
+                        // found multi column directive
+                        multiCols = new Integer(matcher.group(1));
+                        talent = matcher.replaceAll("");
+                    }
+                    // then find custom cost
+                    matcher = customCostPattern.matcher(talent);
+                    if (matcher.find()) {
+                        // found multi column directive
+                        customCost = new Integer(matcher.group(1));
+                        talent = matcher.replaceAll("");
+                    }
+                    addTalent(row, col, talent, multiCols, customCost);
+                    col += multiCols;
+                }
+                row++;
+            }
+        } catch (Exception e) {
+            throw new Exception("Error while creating talent list in " + data.get("id") + ": " + e.getMessage());
+        }
     }
 
     /**
