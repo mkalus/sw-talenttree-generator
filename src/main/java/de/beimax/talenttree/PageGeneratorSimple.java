@@ -313,13 +313,13 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         canvas.setFontAndSize(generator.getFontHeader(), 13);
         float offSetYTalentText;
         if (headerTwoLine) {
-            String[] parts = headerProperties.title.split("\\n");
+            String[] parts = headerProperties.title.toUpperCase().split("\\n");
             canvas.showTextAligned(Element.ALIGN_LEFT, parts[0], x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 14f, 0);
             canvas.showTextAligned(Element.ALIGN_LEFT, parts[1], x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 27f, 0);
             offSetYTalentText = y - PDFGenerator.talentBoxStroke*2 - 28f;
         }
         else {
-            canvas.showTextAligned(Element.ALIGN_LEFT, headerProperties.title, x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 14f, 0);
+            canvas.showTextAligned(Element.ALIGN_LEFT, headerProperties.title.toUpperCase(), x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 14f, 0);
             offSetYTalentText = y - PDFGenerator.talentBoxStroke*2 - 15f;
         }
         // mini text

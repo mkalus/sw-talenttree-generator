@@ -9,6 +9,7 @@ Example file (German talents): https://dl.dropboxusercontent.com/u/9102471/StarW
 Current status:
 - runs on command line, no fancy GUI
 - All talent trees from Edge if the Empire base game (German and English)
+- Supplement "Dangerous Covenants" (English)
 - Supplement "Enter the Unknown" (English)
 
 Help would be appreciated :-)

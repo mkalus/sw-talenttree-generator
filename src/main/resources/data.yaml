@@ -565,6 +565,148 @@ talent_paths:
   - [0,1,0,1]
   - [1,1,1]
 ---
+#Extended: Dangerous Covenants
+id: HiredGunEnforcer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Enforcer
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Brawl
+  - Coercion
+  - KnowledgeUnderworld
+  - Streetwise
+talents:
+  - [Toughened, Intimidating, Fearsome, StreetSmarts]
+  - [Durable, StunningBlow, NaturalEnforcer, TalkTheTalk]
+  - [Intimidating, DefensiveStance, Toughened, Loom]
+  - [SecondWind, StreetSmarts, WalkTheWalk, Intimidating]
+  - [Fearsome, Dedication, BlackmarketContacts, Fearsome]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,1,1]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+#Extended: Dangerous Covenants
+id: HiredGunDemolitionist
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Demolitionist
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Computers
+  - Cool
+  - Mechanics
+  - Skulduggery
+talents:
+  - [PowerfulBlast, Grit, SelectiveDetonation, SteadyNerves]
+  - [Toughened, TimeToGo, PowerfulBlast, Grit]
+  - [Enduring, TimeToGoImproved, SteadyNerves, RapidReaction]
+  - [ImprovisedDetonation, PowerfulBlast, Grit, SelectiveDetonation]
+  - [ImprovisedDetonationImproved, Dedication, MasterGrenadier, SelectiveDetonation]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,0,1]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,1,1]
+  - [1,0,1,0]
+  - [0,1,1]
+---
+#Extended: Dangerous Covenants
+id: HiredGunHeavy
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Heavy
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Gunnery
+  - Perception
+  - RangedHeavy
+  - Resilience
+talents:
+  - [Burly, Barrage, Grit, Toughened]
+  - [Barrage, Brace, SpareClip, Durable]
+  - [SideStep, Burly, HeroicFortitude, Toughened]
+  - [Brace, Barrage, RainOfDeath, HeroicResilience]
+  - [Burly, Dedication, ArmorMaster, HeavyHitter]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [0,0,1]
+  - [1,1,0,1]
+  - [1,0,0]
+  - [1,0,1,0]
+  - [1,1,1]
+---
+#Extended: Dangerous Covenants
+id: SignatureHiredGunLastOneStanding
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureHiredGun
+subheader: LastOneStanding
+talents:
+  - [LOSBase|30*4]
+  - [LOSReduceSetBack, LOSAddBoost, LOSReduceSetBack, LOSAddBoost]
+  - [LOSReduceDifficulty, LOSIncreaseEffect, LOSIncreaseEffect, LOSDestiny]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+signature_nodes: [0,1,1,0]
+---
+#Extended: Dangerous Covenants
+id: SignatureHiredGunUnmatchedProtection
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureHiredGun
+subheader: UnmatchedProtection
+talents:
+  - [UPBase|30*4]
+  - [UPDuration, UPDuration, UPSoak, UPProtectAlly]
+  - [UPDuration, UPDestiny, UPAdditionalReduction, UPAdditionalReduction]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,0,1]
+  - [1,1,0,1]
+  - [1,0,1]
+signature_nodes: [1,0,0,1]
+---
 id: SmugglerPilot
 type: de.beimax.talenttree.PageGeneratorCareer
 header: Smuggler
