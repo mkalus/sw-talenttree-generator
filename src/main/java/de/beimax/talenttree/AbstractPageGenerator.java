@@ -26,7 +26,7 @@ import java.util.Map;
  *
  * Abstract class for single page generators
  */
-public abstract class AbstractPageGenerator {
+public abstract class AbstractPageGenerator implements Comparable<AbstractPageGenerator> {
     /**
      * Current document
      */
@@ -77,6 +77,21 @@ public abstract class AbstractPageGenerator {
      * @throws Exception
      */
     abstract public void generate() throws Exception;
+
+    /**
+     * Get localized sort key for ordering
+     * @return Sort key string
+     */
+    abstract public String getLocalizedSortKey();
+
+    /**
+     * get data structure's id key
+     * @return
+     * @throws Exception
+     */
+    public String getId()  throws Exception {
+        return getString("id");
+    }
 
     /**
      * Get string from YAML/data

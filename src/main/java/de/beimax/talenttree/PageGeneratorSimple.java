@@ -485,4 +485,46 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         float spacing = PDFGenerator.verticalSpacing;
         return spacing/2 + PDFGenerator.marginVertical + (5 - row) * (PDFGenerator.talentBoxHeight + spacing);
     }
+
+    /**
+     * sort key
+     */
+    protected String mySortKey = null;
+
+    /**
+     * Get localized sort key for ordering
+     * @return Sort key string
+     */
+    public String getLocalizedSortKey() {
+        if (mySortKey == null) {
+            createSortKey();
+        }
+
+        return mySortKey;
+    }
+
+    /**
+     * create a sort key
+     */
+    protected void createSortKey() {
+        try {
+            StringBuilder b = new StringBuilder();
+            // prepend?
+            Object o = data.get("sortKeyPrepend");
+            if (o != null) b.append((String) o);
+            b.append(getMappedLocalizedString("header")).append("00").append(getMappedLocalizedString("subheader"));
+            mySortKey = b.toString();
+        } catch (Exception e) {
+            try {
+                mySortKey = getId();
+            } catch (Exception e1) {
+                mySortKey = "";
+            }
+        }
+    }
+
+    @Override
+    public int compareTo(AbstractPageGenerator abstractPageGenerator) {
+        return getLocalizedSortKey().compareTo(abstractPageGenerator.getLocalizedSortKey());
+    }
 }

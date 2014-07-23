@@ -152,4 +152,21 @@ public class PageGeneratorSignature extends PageGeneratorSimple {
         // move all boxes a bit down to add space for signature nodes
         return super.calculateRowOffset(row) - 50;
     }
+
+    /**
+     * create a sort key - make sure these things come in the group
+     */
+    protected void createSortKey() {
+        try {
+            StringBuilder b = new StringBuilder();
+            b.append(getMappedLocalizedString("group")).append("05").append(getMappedLocalizedString("subheader"));
+            mySortKey = b.toString();
+        } catch (Exception e) {
+            try {
+                mySortKey = getId();
+            } catch (Exception e1) {
+                mySortKey = "";
+            }
+        }
+    }
 }

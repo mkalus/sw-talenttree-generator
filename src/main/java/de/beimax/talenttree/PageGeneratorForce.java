@@ -51,4 +51,21 @@ public class PageGeneratorForce extends PageGeneratorSimple {
         canvas.showTextAligned(Element.ALIGN_RIGHT, getLocalizedString("Ranked"), x - 20, y - 24, 0);
         canvas.endText();
     }
+
+    /**
+     * create a sort key - make sure force powers always come last
+     */
+    protected void createSortKey() {
+        try {
+            StringBuilder b = new StringBuilder();
+            b.append("ZZZ05").append(getMappedLocalizedString("subheader"));
+            mySortKey = b.toString();
+        } catch (Exception e) {
+            try {
+                mySortKey = getId();
+            } catch (Exception e1) {
+                mySortKey = "";
+            }
+        }
+    }
 }

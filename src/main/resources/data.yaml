@@ -221,6 +221,7 @@ id: SignatureExplorerSuddenDiscovery
 type: de.beimax.talenttree.PageGeneratorSignature
 header: SignatureExplorer
 subheader: SuddenDiscovery
+group: Explorer
 talents:
   - [SDBase|30*4]
   - [SDAddBoost, SDReduceSetback, SDReduceSetback, SDChangeSkill]
@@ -238,6 +239,7 @@ id: SignatureExplorerUnmatchedMobility
 type: de.beimax.talenttree.PageGeneratorSignature
 header: SignatureExplorer
 subheader: UnmatchedMobility
+group: Explorer
 talents:
   - [UMBase|30*4]
   - [UMDuration, UMFreeManeuver, UMFreeManeuver, UMMeleeDefense]
@@ -678,6 +680,7 @@ id: SignatureHiredGunLastOneStanding
 type: de.beimax.talenttree.PageGeneratorSignature
 header: SignatureHiredGun
 subheader: LastOneStanding
+group: HiredGun
 talents:
   - [LOSBase|30*4]
   - [LOSReduceSetBack, LOSAddBoost, LOSReduceSetBack, LOSAddBoost]
@@ -695,6 +698,7 @@ id: SignatureHiredGunUnmatchedProtection
 type: de.beimax.talenttree.PageGeneratorSignature
 header: SignatureHiredGun
 subheader: UnmatchedProtection
+group: HiredGun
 talents:
   - [UPBase|30*4]
   - [UPDuration, UPDuration, UPSoak, UPProtectAlly]
@@ -922,6 +926,7 @@ type: de.beimax.talenttree.PageGeneratorSimple
 header: Universal
 subheader: ForceSensitiveExile
 descriptiveText: descriptionUniversalForceSensitiveExile
+sortKeyPrepend: ZZZ00
 talents:
   - [UncannySenses, Insight, Forager, UncannyReactions]
   - [ConvincingDemeanor, OverwhelmEmotions, IntenseFocus, QuickDraw]
