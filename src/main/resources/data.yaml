@@ -216,6 +216,40 @@ talent_paths:
   - [1,0,0,1]
   - [1,1,1]
 ---
+#Extended: Enter the Unknown
+id: SignatureExplorerSuddenDiscovery
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureExplorer
+subheader: SuddenDiscovery
+talents:
+  - [SDBase|30*4]
+  - [SDAddBoost, SDReduceSetback, SDReduceSetback, SDChangeSkill]
+  - [SDAddBoost, SDReduceDifficulty, SDFrequency, SDDestiny]
+talent_paths:
+  - [0,0,0]
+  - [1,0,1,1]
+  - [0,1,0]
+  - [1,1,0,1]
+  - [1,1,0]
+signature_nodes: [1,1,0,0]
+---
+#Extended: Enter the Unknown
+id: SignatureExplorerUnmatchedMobility
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureExplorer
+subheader: UnmatchedMobility
+talents:
+  - [UMBase|30*4]
+  - [UMDuration, UMFreeManeuver, UMFreeManeuver, UMMeleeDefense]
+  - [UMDuration, UMDuration, UMDestiny, UMRangedDefense]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,1,0]
+  - [1,0,1,1]
+  - [1,1,1]
+signature_nodes: [1,0,0,1]
+---
 id: BountyHunterAssassin
 type: de.beimax.talenttree.PageGeneratorCareer
 header: BountyHunter

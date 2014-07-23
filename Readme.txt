@@ -8,7 +8,8 @@ Example file (German talents): https://dl.dropboxusercontent.com/u/9102471/StarW
 
 Current status:
 - runs on command line, no fancy GUI
-- German and English talent tree for Edge of the empire file finished (EotE base game only for now)
+- All talent trees from Edge if the Empire base game (German and English)
+- Supplement "Enter the Unknown" (English)
 
 Help would be appreciated :-)
 
