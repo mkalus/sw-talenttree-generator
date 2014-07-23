@@ -240,7 +240,7 @@ KnowSomebodyData = KNOW SOMEBODY|000|A|R
 KnowSomebody = Once per session, when attempting to purchase a legally available item, reduce its rarity by 1 per rank of Know Somebody.
 LethalBlowsData = LETHAL BLOW|000|P|R
 LethalBlows = Add +10 per rank of Lethal Blows to any Critical Injury result inflicted on opponents.
-LetsRideData = LET'S RIDE|000|A|N
+LetsRideData = LET’S RIDE|000|A|N
 LetsRide = Once per round, may mount or dismount a vehicle or beast, or enter a cockpit or weapon station on a vehicle, as an incidental.
 MasterDoctorData = MASTER DOCTOR|000|A|N
 MasterDoctor = Once per round, suffer 2 strain to decrease the difficulty of a Medicine check by 1.
@@ -282,7 +282,7 @@ NaturalScholarData = NATURAL SCHOLAR|000|A|N
 NaturalScholar = Once per session, may re-roll any 1 Knowledge skill check.
 NaturalTinkererData = NATURAL TINKERER|000|A|N
 NaturalTinkerer = Once per session, re-roll any 1 Mechanics check.
-NobodysFoolData = NOBODY'S FOOL|000|139|P|R
+NobodysFoolData = NOBODY’S FOOL|000|139|P|R
 NobodysFool = May upgrade difficulty of incoming Charm, Coercion, or Deception checks once per rank of Nobody’s Fool.
 OutdoorsmanData = OUTDOORSMAN|000|P|R
 Outdoorsman = Remove |#b | per rank of Outdoorsman from checks to move through terrain or manage environmental effects. Decrease overland travel times by half.
@@ -382,6 +382,29 @@ WellRoundedData = WELL ROUNDED|000|P|R
 WellRounded = Choose any 2 skills. They permanently become career skills.
 WheelAndDealData = WHEEL AND DEAL|000|P|R
 WheelAndDeal = When selling goods legally, gain 10% more credits per rank of Wheel and Deal.
+
+#Supplement: Enter the Unknown
+Archaeologist = Archaeologist
+BigGameHunter = Big-Game Hunter
+Driver = Driver
+AllTerrainDriverData = All-Terrain Driver|000|P|N
+AllTerrainDriver = Do not suffer usual penalties for driving through difficult terrain when using Piloting (Planetary).
+BringItDownData = Bring It Down|000|A|N
+BringItDown = Once per attack, spend 1 Destiny Point to add damage to a single hit equal to target’s Brawn value.
+FullStopData = Full Stop|000|A|N
+FullStop = When piloting a ship or vehicle, take a Full Stop maneuver to reduce speed to zero. Suffer system strain equal to the speed reduced.
+HuntersQuarryData = Hunter’s Quarry|000|A|N
+HuntersQuarryImprovedData = Improved\nHunter’s Quarry|000|A|N
+HuntersQuarryImproved = Suffer 2 strain to perform Hunter’s Quarry action as a maneuver.
+HuntersQuarry = Take Hunter’s Quarry action; make a  |#ddd | Survival check to upgrade the ability of all attacks made against a target at long range until the end of the character’s next turn.
+MasterDriverData = Master Driver|000|A|N
+MasterDriver = Once per round when driving a vehicle, may suffer 2 strain to perform any action as a maneuver.
+MuseumWorthyData = Museum Worthy|000|A|N
+MuseumWorthy = Once per session, take Museum Worthy action, make |#ddd | Knowledge (Education) check to gain information regarding a relic, ruin, or piece of history.
+NaturalDriverData = Natural Driver|000|A|N
+NaturalDriver = Once per session, may re-roll any 1 Piloting (Planetary) or Gunnery check.
+PinData = Pin|000|A|R
+Pin = Take Pin action: make an Opposed Athletics check to immobilize an engaged opponent until the end of the character’s next turn. Spend |#x | to extend duration one round.
 
 #Force talents
 BalanceData = BALANCE|000|A|N

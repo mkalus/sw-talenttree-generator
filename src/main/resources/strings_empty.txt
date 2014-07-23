@@ -382,6 +382,29 @@ WellRounded = TODO
 WheelAndDealData = TITLE|000|P|R
 WheelAndDeal = TODO
 
+#Supplement: Enter the Unknown
+Archaeologist =
+BigGameHunter =
+Driver =
+PinData = TITLE|000|A|R
+MuseumWorthyData = TITLE|000|A|N
+HuntersQuarryData = TITLE|000|A|N
+HuntersQuarryImprovedData = TITLE|000|A|N
+BringItDownData = TITLE|000|A|N
+AllTerrainDriverData = TITLE|000|P|N
+NaturalDriverData = TITLE|000|A|N
+FullStopData = TITLE|000|A|N
+MasterDriverData = TITLE|000|A|N
+Pin = TODO
+MuseumWorthy = TODO
+HuntersQuarry = TODO
+HuntersQuarryImproved = TODO
+BringItDown = TODO
+AllTerrainDriver = TODO
+NaturalDriver = TODO
+FullStop = TODO
+MasterDriver = TODO
+
 #Force talents
 BalanceData = TITLE|000|A|N
 Balance = TODO

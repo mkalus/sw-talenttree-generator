@@ -402,6 +402,29 @@ UncannyReactions = Pro Talentrang bekommst du einen |#B | in den Pool aller Wach
 UncannySensesData = ÜBERNATÜRLICHE\nWAHRNEHMUNG|144|P|R
 UncannySenses = Pro Talentrang bekommst du einen |#B | in den Pool aller Wahrnehmungsproben.
 
+#Supplement: Enter the Unknown
+Archaeologist = Archäologe
+BigGameHunter = Großwildjäger
+Driver = Fahrer
+PinData = TODO|000|A|R
+MuseumWorthyData = TODO|000|A|N
+HuntersQuarryData = TODO|000|A|N
+HuntersQuarryImprovedData = TODO|000|A|N
+BringItDownData = TODO|000|A|N
+AllTerrainDriverData = TODO|000|P|N
+NaturalDriverData = TODO|000|A|N
+FullStopData = TODO|000|A|N
+MasterDriverData = TODO|000|A|N
+Pin = TODO
+MuseumWorthy = TODO
+HuntersQuarry = TODO
+HuntersQuarryImproved = TODO
+BringItDown = TODO
+AllTerrainDriver = TODO
+NaturalDriver = TODO
+FullStop = TODO
+MasterDriver = TODO
+
 #Force Powers
 ControlSense1 = Andauernder Effekt: Ein |#C | wird angelegt. Ein Mal pro Runde kann der Machtnutzer bei einem Angriff gegen ihn die Schwierigkeit ein Mal aufwerten.
 ControlSense1Data = KONTROLLE|280|P|N

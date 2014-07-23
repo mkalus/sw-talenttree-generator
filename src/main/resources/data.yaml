@@ -108,6 +108,114 @@ talent_paths:
   - [1,0,0,1]
   - [1,1,1]
 ---
+#Extended: Enter the Unknown
+id: ExplorerArchaeologist
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: Archaeologist
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - Athletics
+  - Discipline
+  - KnowledgeEducation
+  - KnowledgeLore
+talents:
+  - [WellRounded, HardHeaded, Researcher, Grit]
+  - [Durable, Toughened, Resolve, KnowledgeSpecialization]
+  - [StunningBlow, Knockdown, RespectedScholar, Researcher]
+  - [HardHeaded, Enduring, Grit, KnowledgeSpecialization]
+  - [Pin, Dedication, RespectedScholar, MuseumWorthy]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,1]
+  - [1,1,1]
+  - [1,0,0,1]
+  - [1,0,0]
+  - [1,0,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
+---
+#Extended: Enter the Unknown
+id: ExplorerBigGameHunter
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: BigGameHunter
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - KnowledgeXenology
+  - RangedHeavy
+  - Stealth
+  - Survival
+talents:
+  - [Forager, Grit, Stalker, Outdoorsman]
+  - [Toughened, Outdoorsman, Confidence, Swift]
+  - [Stalker, NaturalHunter, ExpertTracker, HightenedAwareness]
+  - [Grit, HuntersQuarry, QuickStrike, ExpertTracker]
+  - [BringItDown, HuntersQuarryImproved, Dedication, SuperiorReflexes]
+talent_paths:
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,1,0]
+  - [1,0,1,0]
+  - [0,1,1]
+  - [0,0,1,1]
+  - [1,1,0]
+  - [1,1,1,1]
+  - [0,0,1]
+---
+#Extended: Enter the Unknown
+id: ExplorerDriver
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: Driver
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - Cool
+  - Gunnery
+  - Mechanics
+  - PilotingPlanetary
+talents:
+  - [FullThrottle, AllTerrainDriver, FineTuning, Gearhead]
+  - [Grit, SkilledJokey, RapidReaction, Grit]
+  - [FullThrottleImproved, TrickyTarget, FineTuning, Toughened]
+  - [DefensiveDriving, SkilledJokey, NaturalDriver, Gearhead]
+  - [FullThrottleSupreme, FullStop, MasterDriver, Dedication]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,1]
+  - [1,1,1]
+  - [1,0,1,1]
+  - [0,0,1]
+  - [1,0,0,1]
+  - [1,1,0]
+  - [1,0,0,1]
+  - [1,1,1]
+---
 id: BountyHunterAssassin
 type: de.beimax.talenttree.PageGeneratorCareer
 header: BountyHunter
