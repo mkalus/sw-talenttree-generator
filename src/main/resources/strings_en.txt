@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 2
-date = 2014-07-17
+version = 3
+date = 2014-07-23
 game = Edge of the Empire
 copyright = Copyright Fantasy Flight Games
 PDFTitle = Star Wars Edge of the Empire Talent Trees
