@@ -23,7 +23,7 @@ bonus_skills:
   - Streetwise
 talents:
   - [GalaxyMapper, StreetSmarts, RapidRecovery, StreetSmarts]
-  - [SkilledJokey, GalaxyMapper, Grit, Toughened]
+  - [SkilledJockey, GalaxyMapper, Grit, Toughened]
   - [MasterStarhopper, DefensiveDriving, RapidRecovery, Durable]
   - [RapidRecovery, JumpUp, Grit, Knockdown]
   - [Dedication, Toughened, Dodge, Dodge]
@@ -60,7 +60,7 @@ talents:
   - [RapidRecovery, Stalker, Grit, Shortcut]
   - [Forager, QuickStrike, LetsRide, Disorient]
   - [RapidRecovery, NaturalHunter, FamiliarSuns, Shortcut]
-  - [Grit, HightenedAwareness, Toughened, QuickStrike]
+  - [Grit, HeightenedAwareness, Toughened, QuickStrike]
   - [UtilityBelt, Dedication, Stalker, Disorient]
 talent_paths:
   - [0,0,0]
@@ -166,7 +166,7 @@ bonus_skills:
 talents:
   - [Forager, Grit, Stalker, Outdoorsman]
   - [Toughened, Outdoorsman, Confidence, Swift]
-  - [Stalker, NaturalHunter, ExpertTracker, HightenedAwareness]
+  - [Stalker, NaturalHunter, ExpertTracker, HeightenedAwareness]
   - [Grit, HuntersQuarry, QuickStrike, ExpertTracker]
   - [BringItDown, HuntersQuarryImproved, Dedication, SuperiorReflexes]
 talent_paths:
@@ -201,15 +201,15 @@ bonus_skills:
   - PilotingPlanetary
 talents:
   - [FullThrottle, AllTerrainDriver, FineTuning, Gearhead]
-  - [Grit, SkilledJokey, RapidReaction, Grit]
+  - [Grit, SkilledJockey, RapidReaction, Grit]
   - [FullThrottleImproved, TrickyTarget, FineTuning, Toughened]
-  - [DefensiveDriving, SkilledJokey, NaturalDriver, Gearhead]
+  - [DefensiveDriving, SkilledJockey, NaturalDriver, Gearhead]
   - [FullThrottleSupreme, FullStop, MasterDriver, Dedication]
 talent_paths:
   - [0,0,0]
   - [1,0,0,1]
   - [1,1,1]
-  - [1,0,1,1]
+  - [1,1,0,1]
   - [0,0,1]
   - [1,0,0,1]
   - [1,1,0]
@@ -497,111 +497,6 @@ talent_paths:
   - [0,1,1,1]
   - [1,1,0]
 ---
-id: HiredGunDemolitionist
-type: de.beimax.talenttree.PageGeneratorCareer
-header: HiredGun
-subheader: Demolitionist
-skills:
-  - Athletics
-  - Brawl
-  - Discipline
-  - Melee
-  - PilotingPlanetary
-  - RangedLight
-  - Resilience
-  - Vigilance
-bonus_skills:
-  - Computers
-  - Cool
-  - Mechanics
-  - Skulduggery
-talents:
-  - [PowerfulBlast, Grit, SelectiveDetonation, SteadyNerves]
-  - [Toughened, TimeToGo, PowerfulBlast, Grit]
-  - [Enduring, TimeToGoImproved, SteadyNerves, RapidReaction]
-  - [ImprovisedDetonation, PowerfulBlast, Grit, SelectiveDetonation]
-  - [ImprovisedDetonationImproved, Dedication, MasterGrenadier, SelectiveDetonation]
-talent_paths:
-  - [0,0,0]
-  - [1,1,0,1]
-  - [0,0,1]
-  - [1,1,1,1]
-  - [0,0,0]
-  - [1,0,1,1]
-  - [1,1,1]
-  - [1,0,1,0]
-  - [0,1,1]
----
-id: HiredGunEnforcer
-type: de.beimax.talenttree.PageGeneratorCareer
-header: HiredGun
-subheader: Enforcer
-skills:
-  - Athletics
-  - Brawl
-  - Discipline
-  - Melee
-  - PilotingPlanetary
-  - RangedLight
-  - Resilience
-  - Vigilance
-bonus_skills:
-  - Brawl
-  - Coercion
-  - KnowledgeUnderworld
-  - Streetwise
-talents:
-  - [Toughened, Intimidating, Fearsome, StreetSmarts]
-  - [Durable, StunningBlow, NaturalEnforcer, TalkTheTalk]
-  - [Intimidating, DefensiveStance, Toughened, Loom]
-  - [SecondWind, StreetSmarts, WalkTheWalk, Intimidating]
-  - [Fearsome, Dedication, BlackMarketContacts, Fearsome]
-talent_paths:
-  - [0,0,0]
-  - [1,1,1,0]
-  - [0,1,1]
-  - [0,1,0,1]
-  - [1,1,0]
-  - [0,1,0,1]
-  - [1,1,0]
-  - [1,0,0,1]
-  - [1,1,1]
----
-id: HiredGunHeavy
-type: de.beimax.talenttree.PageGeneratorCareer
-header: HiredGun
-subheader: Heavy
-skills:
-  - Athletics
-  - Brawl
-  - Discipline
-  - Melee
-  - PilotingPlanetary
-  - RangedLight
-  - Resilience
-  - Vigilance
-bonus_skills:
-  - Gunnery
-  - Perception
-  - RangedHeavy
-  - Resilience
-talents:
-  - [Burly, Barrage, Grit, Toughened]
-  - [Barrage, Brace, SpareClip, Durable]
-  - [SideStep, Burly, HeroicFortitude, Toughened]
-  - [Brace, Barrage, RainOfDeath, HeroicResilience]
-  - [Burly, Dedication, ArmorMaster, HeavyHitter]
-talent_paths:
-  - [0,0,0]
-  - [1,1,0,1]
-  - [1,1,0]
-  - [0,1,0,1]
-  - [0,0,1]
-  - [1,1,0,1]
-  - [1,0,0]
-  - [1,0,1,0]
-  - [1,1,1]
----
 id: HiredGunMarauder
 type: de.beimax.talenttree.PageGeneratorCareer
 header: HiredGun
@@ -835,8 +730,8 @@ bonus_skills:
   - PilotingSpace
   - PilotingPlanetary
 talents:
-  - [FullThrottle, SkilledJokey, GalaxyMapper, LetsRide]
-  - [SkilledJokey, DeadToRights, GalaxyMapper, RapidRecovery]
+  - [FullThrottle, SkilledJockey, GalaxyMapper, LetsRide]
+  - [SkilledJockey, DeadToRights, GalaxyMapper, RapidRecovery]
   - [FullThrottleImproved, DeadToRightsImproved, Grit, NaturalPilot]
   - [Grit, FullThrottleSupreme, TrickyTarget, DefensiveDriving]
   - [MasterPilot, Dedication, Toughened, BrilliantEvasion]
