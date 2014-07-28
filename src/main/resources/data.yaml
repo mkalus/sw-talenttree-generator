@@ -696,7 +696,7 @@ talents:
   - [Durable, StunningBlow, NaturalEnforcer, TalkTheTalk]
   - [Intimidating, DefensiveStance, Toughened, Loom]
   - [SecondWind, StreetSmarts, WalkTheWalk, Intimidating]
-  - [Fearsome, Dedication, BlackmarketContacts, Fearsome]
+  - [Fearsome, Dedication, BlackMarketContacts, Fearsome]
 talent_paths:
   - [0,0,0]
   - [1,1,0,1]
