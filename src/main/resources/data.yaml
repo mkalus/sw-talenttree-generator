@@ -353,6 +353,111 @@ talent_paths:
   - [0,1,1,1]
   - [1,1,0]
 ---
+id: HiredGunDemolitionist
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Demolitionist
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Computers
+  - Cool
+  - Mechanics
+  - Skulduggery
+talents:
+  - [PowerfulBlast, Grit, SelectiveDetonation, SteadyNerves]
+  - [Toughened, TimeToGo, PowerfulBlast, Grit]
+  - [Enduring, TimeToGoImproved, SteadyNerves, RapidReaction]
+  - [ImprovisedDetonation, PowerfulBlast, Grit, SelectiveDetonation]
+  - [ImprovisedDetonationImproved, Dedication, MasterGrenadier, SelectiveDetonation]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,0,1]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,1,1]
+  - [1,0,1,0]
+  - [0,1,1]
+---
+id: HiredGunEnforcer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Enforcer
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Brawl
+  - Coercion
+  - KnowledgeUnderworld
+  - Streetwise
+talents:
+  - [Toughened, Intimidating, Fearsome, StreetSmarts]
+  - [Durable, StunningBlow, NaturalEnforcer, TalkTheTalk]
+  - [Intimidating, DefensiveStance, Toughened, Loom]
+  - [SecondWind, StreetSmarts, WalkTheWalk, Intimidating]
+  - [Fearsome, Dedication, BlackMarketContacts, Fearsome]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,0]
+  - [0,1,1]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+id: HiredGunHeavy
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Heavy
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Gunnery
+  - Perception
+  - RangedHeavy
+  - Resilience
+talents:
+  - [Burly, Barrage, Grit, Toughened]
+  - [Barrage, Brace, SpareClip, Durable]
+  - [SideStep, Burly, HeroicFortitude, Toughened]
+  - [Brace, Barrage, RainOfDeath, HeroicResilience]
+  - [Burly, Dedication, ArmorMaster, HeavyHitter]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [0,0,1]
+  - [1,1,0,1]
+  - [1,0,0]
+  - [1,0,1,0]
+  - [1,1,1]
+---
 id: HiredGunMarauder
 type: de.beimax.talenttree.PageGeneratorCareer
 header: HiredGun
