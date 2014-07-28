@@ -334,7 +334,7 @@ public class PDFGenerator {
             // generate page
             pageGenerator.generate();
 
-            System.out.println(pageGenerator.getLocalizedSortKey());
+            System.out.println("Generated: " + pageGenerator.getId());
         }
 
         // close and write document

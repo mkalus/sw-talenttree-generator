@@ -14,3 +14,10 @@ Version 3:
 
 - "Dangerous Covenants" and "Enter the Unknown" added
 - Signature trees added
+
+Version 4:
+==========
+
+- Fixes and typos by bknowles (thanks)
+- Fixed debug output of command line
+- Font size calculation in text boxes optimized

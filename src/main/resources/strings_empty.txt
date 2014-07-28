@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 3
-date = 2014-07-23
+version = 4
+date = 2014-07-28
 game = Edge of the Empire
 copyright = Copyright Fantasy Flight Games
 PDFTitle = Star Wars Talent Trees
@@ -119,8 +119,8 @@ BadMotivatorData = TITLE|000|A|N
 BadMotivator = TODO
 BarrageData = TITLE|000|P|R
 Barrage = TODO
-BlackmarketContactsData = TITLE|000|A|R
-BlackmarketContacts = TODO
+BlackMarketContactsData = TITLE|000|A|R
+BlackMarketContacts = TODO
 BloodedData = TITLE|000|P|R
 Blooded = TODO
 BodyguardTData = TITLE|000|A|R
@@ -203,8 +203,8 @@ HeroicFortitudeData = TITLE|000|A|N
 HeroicFortitude = TODO
 HiddenStorageData = TITLE|000|P|R
 HiddenStorage = TODO
-HightenedAwarenessData = TITLE|000|P|N
-HightenedAwareness = TODO
+HeightenedAwarenessData = TITLE|000|P|N
+HeightenedAwareness = TODO
 HoldTogetherData = TITLE|000|A|N
 HoldTogether = TODO
 HunterData = TITLE|000|P|R
@@ -323,8 +323,8 @@ ShortcutData = TITLE|000|P|R
 Shortcut = TODO
 SideStepData = TITLE|000|A|R
 SideStep = TODO
-SkilledJokeyData = TITLE|000|P|R
-SkilledJokey = TODO
+SkilledJockeyData = TITLE|000|P|R
+SkilledJockey = TODO
 SkilledSlicerData = TITLE|000|A|N
 SkilledSlicer = TODO
 SmoothTalkerData = TITLE|000|A|R

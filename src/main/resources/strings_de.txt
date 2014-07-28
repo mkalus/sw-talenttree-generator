@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 3
-date = 23.07.2014
+version = 4
+date = 28.07.2014
 game = Am Rande des Imperiums
 copyright = (c) Fantasy Flight Games and Heidelberger Spiele
 PDFTitle = Star Wars am Rande des Imperiums: Talentbäume
@@ -115,8 +115,8 @@ BadMotivatorData = DEFEKTER MOTIVATOR|134|A|N
 BadMotivator = Ein Mal pro Spielsitzung kannst du die Aktion Defekter Motivator ausführen: Lege eine |*schwierige (|#ddd|*) Mechanikprobe | ab. Bei Erfolg fällt ein technisches Gerät deiner Wahl plötzlich aus.
 BarrageData = SPERRFEUER|142|P|R
 Barrage = Wenn du einen Gegner in großer oder extremer Reichweite mit schweren Fernkampfwaffen oder Artillerie triffst, verursachst du 1 zusätzlichen Schaden pro Talentrang.
-BlackmarketContacts = Beim Kauf von illegaler Ware kannst du die Seltenheit um 1 Talentrang reduzieren. Der Preis steigt pro Reduktion um die Hälfte des Grundpreises.
-BlackmarketContactsData = SCHWARZMARKT-\nKONTAKTE|142|A|R
+BlackMarketContacts = Beim Kauf von illegaler Ware kannst du die Seltenheit um 1 Talentrang reduzieren. Der Preis steigt pro Reduktion um die Hälfte des Grundpreises.
+BlackMarketContactsData = SCHWARZMARKT-\nKONTAKTE|142|A|R
 Blooded = Bei allen Fertigkeitsproben, mit denen du Giften widerstehst oder dich von Vergiftungen erholst, bekommst du einen zusätzlichen |#B | pro Talentrang. Außerdem sinkt bei dir die Wirkungsdauer von Giften um 1 Runde pro Talentrang (Minimum 1 Runde).
 BloodedData = GIFTRESISTENZ|138|P|R
 BodyguardTData = PERSONENSCHUTZ|141|A|R
@@ -199,8 +199,8 @@ HeroicFortitudeData = STANDHAFTIGKEIT|142|A|N
 HeroicFortitude = Du kannst 1 Schicksalspunkt ausgeben, um bis zum Ende der Begegnung alle Folgen kritischer Verletzungen, die Stärke- und Gewandtheitsproben betreffen, zu ignorieren.
 HiddenStorageData = GEHEIME VERSCHLÄGE|137|P|R
 HiddenStorage = Dein Raumschiff oder einer deiner Gegenstände hat Geheimverstecke, in denen du Objekte schmuggeln kannst, deren Belastungswert maximal so hoch ist wie dein Talentrang.
-HightenedAwarenessData = GESCHÄRFTE SINNE|137|P|N
-HightenedAwareness = Verbündete in kurzer Reichweite zu dir erhalten |#B | auf alle Wahrnehmungs- und Wachsamkeitsproben. Verbündete im Nahkampfbereich bekommen sogar |#BB|.
+HeightenedAwarenessData = GESCHÄRFTE SINNE|137|P|N
+HeightenedAwareness = Verbündete in kurzer Reichweite zu dir erhalten |#B | auf alle Wahrnehmungs- und Wachsamkeitsproben. Verbündete im Nahkampfbereich bekommen sogar |#BB|.
 HoldTogetherData = FLIEG SCHÖN WEITER!|136|A|N
 HoldTogether = Unmittelbar nachdem ein Raumschiff oder Fahrzeug Schaden erlitten hat, kannst du die Nebenaktion Flieg schön weiter! ausführen, d.h. 1 Schicksalspunkt ausgeben, um den Schaden in Systembelastung umzuwandeln (anstatt in Hüllenschaden).
 Hunter = Bei allen Fertigkeitsproben (auch Kampfproben), die du im Zusammenhang mit Tieren ablegst, bekommst du einen |#B | pro Talentrang. Außerdem addierst du bei kritischen Verletzungswürfen gegen Tiere 10 pro Talentrang hinzu.
@@ -319,8 +319,8 @@ Shortcut = Bei Verfolgungsjagden bekommst du einen |#B | pro Talentrang auf alle
 ShortcutData = ABKÜRZUNG|132|P|R
 SideStepData = SEITWÄRTSROLLE|142|A|R
 SideStep = Ein Mal pro Runde kannst du das Manöver Seitwärtsrolle ausführen, d.h. X Erschöpfung hinnehmen (X darf nicht höher als dein Talentrang sein), um bis zum Beginn deines nächsten Zuges die Schwierigkeit aller Fernkampfangriffe gegen dich X Mal aufzuwerten.
-SkilledJokey = Bei all deinen Pilot (Planetar)- und Pilot (Weltraum)-Proben wird ein |#b | pro Talentrang aus dem Pool entfernt.
-SkilledJokeyData = PILOTENASS|141|P|R
+SkilledJockey = Bei all deinen Pilot (Planetar)- und Pilot (Weltraum)-Proben wird ein |#b | pro Talentrang aus dem Pool entfernt.
+SkilledJockeyData = PILOTENASS|141|P|R
 SkilledSlicer = Bei Computertechnikproben kannst du |#x | ausgeben, um weitere Computertechnikproben im selben System als Manöver ausführen zu können.
 SkilledSlicerData = BEGABTER HACKER|133|A|N
 SmoothTalkerData = SÜSSHOLZRASPLER|142|A|R
