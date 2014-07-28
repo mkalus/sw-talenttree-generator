@@ -23,7 +23,7 @@ bonus_skills:
   - Streetwise
 talents:
   - [GalaxyMapper, StreetSmarts, RapidRecovery, StreetSmarts]
-  - [SkilledJokey, GalaxyMapper, Grit, Toughened]
+  - [SkilledJockey, GalaxyMapper, Grit, Toughened]
   - [MasterStarhopper, DefensiveDriving, RapidRecovery, Durable]
   - [RapidRecovery, JumpUp, Grit, Knockdown]
   - [Dedication, Toughened, Dodge, Dodge]
@@ -60,7 +60,7 @@ talents:
   - [RapidRecovery, Stalker, Grit, Shortcut]
   - [Forager, QuickStrike, LetsRide, Disorient]
   - [RapidRecovery, NaturalHunter, FamiliarSuns, Shortcut]
-  - [Grit, HightenedAwareness, Toughened, QuickStrike]
+  - [Grit, HeightenedAwareness, Toughened, QuickStrike]
   - [UtilityBelt, Dedication, Stalker, Disorient]
 talent_paths:
   - [0,0,0]
@@ -95,7 +95,7 @@ talents:
   - [KnowSomebody, ConvincingDemeanor, WheelAndDeal, SmoothTalker]
   - [WheelAndDeal, Grit, SpareClip, Toughened]
   - [KnowSomebody, NobodysFool, SmoothTalker, NobodysFool]
-  - [WheelAndDeal, SteelyNerves, BlackmarketContacts, BlackmarketContacts]
+  - [WheelAndDeal, SteelyNerves, BlackMarketContacts, BlackMarketContacts]
   - [KnowSomebody, NaturalNegotiator, Dedication, MasterMerchant]
 talent_paths:
   - [0,0,0]
@@ -166,7 +166,7 @@ bonus_skills:
 talents:
   - [Forager, Grit, Stalker, Outdoorsman]
   - [Toughened, Outdoorsman, Confidence, Swift]
-  - [Stalker, NaturalHunter, ExpertTracker, HightenedAwareness]
+  - [Stalker, NaturalHunter, ExpertTracker, HeightenedAwareness]
   - [Grit, HuntersQuarry, QuickStrike, ExpertTracker]
   - [BringItDown, HuntersQuarryImproved, Dedication, SuperiorReflexes]
 talent_paths:
@@ -201,15 +201,15 @@ bonus_skills:
   - PilotingPlanetary
 talents:
   - [FullThrottle, AllTerrainDriver, FineTuning, Gearhead]
-  - [Grit, SkilledJokey, RapidReaction, Grit]
+  - [Grit, SkilledJockey, RapidReaction, Grit]
   - [FullThrottleImproved, TrickyTarget, FineTuning, Toughened]
-  - [DefensiveDriving, SkilledJokey, NaturalDriver, Gearhead]
+  - [DefensiveDriving, SkilledJockey, NaturalDriver, Gearhead]
   - [FullThrottleSupreme, FullStop, MasterDriver, Dedication]
 talent_paths:
   - [0,0,0]
   - [1,0,0,1]
   - [1,1,1]
-  - [1,0,1,1]
+  - [1,1,0,1]
   - [0,0,1]
   - [1,0,0,1]
   - [1,1,0]
@@ -591,7 +591,7 @@ talents:
   - [Durable, StunningBlow, NaturalEnforcer, TalkTheTalk]
   - [Intimidating, DefensiveStance, Toughened, Loom]
   - [SecondWind, StreetSmarts, WalkTheWalk, Intimidating]
-  - [Fearsome, Dedication, BlackmarketContacts, Fearsome]
+  - [Fearsome, Dedication, BlackMarketContacts, Fearsome]
 talent_paths:
   - [0,0,0]
   - [1,1,0,1]
@@ -730,8 +730,8 @@ bonus_skills:
   - PilotingSpace
   - PilotingPlanetary
 talents:
-  - [FullThrottle, SkilledJokey, GalaxyMapper, LetsRide]
-  - [SkilledJokey, DeadToRights, GalaxyMapper, RapidRecovery]
+  - [FullThrottle, SkilledJockey, GalaxyMapper, LetsRide]
+  - [SkilledJockey, DeadToRights, GalaxyMapper, RapidRecovery]
   - [FullThrottleImproved, DeadToRightsImproved, Grit, NaturalPilot]
   - [Grit, FullThrottleSupreme, TrickyTarget, DefensiveDriving]
   - [MasterPilot, Dedication, Toughened, BrilliantEvasion]
@@ -765,9 +765,9 @@ bonus_skills:
   - Deception
   - RangedLight
 talents:
-  - [BlackmarketContacts, ConvincingDemeanor, QuickDraw, RapidReaction]
-  - [ConvincingDemeanor, BlackmarketContacts, ConvincingDemeanor, QuickStrike]
-  - [HiddenStorage, Toughened, BlackmarketContacts, SideStep]
+  - [BlackMarketContacts, ConvincingDemeanor, QuickDraw, RapidReaction]
+  - [ConvincingDemeanor, BlackMarketContacts, ConvincingDemeanor, QuickStrike]
+  - [HiddenStorage, Toughened, BlackMarketContacts, SideStep]
   - [Toughened, RapidReaction, HiddenStorage, SideStep]
   - [Dedication, NaturalCharmer, SoftSpot, QuickStrike]
 talent_paths:
@@ -800,8 +800,8 @@ bonus_skills:
   - Stealth
   - Vigilance
 talents:
-  - [StreetSmarts, BlackmarketContacts, Indistinguishable, BypassSecurity]
-  - [BlackmarketContacts, Dodge, Grit, HiddenStorage]
+  - [StreetSmarts, BlackMarketContacts, Indistinguishable, BypassSecurity]
+  - [BlackMarketContacts, Dodge, Grit, HiddenStorage]
   - [Stalker, Grit, RapidReaction, Shortcut]
   - [BypassSecurity, NaturalRogue, StreetSmarts, JumpUp]
   - [MasterOfShadows, Dodge, Indistinguishable, Dedication]
