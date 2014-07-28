@@ -9,6 +9,7 @@ import java.io.*;
 import java.net.URL;
 import java.util.Locale;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Properties;
 
 /**
@@ -156,6 +157,11 @@ public class PDFGenerator {
     }
 
     /**
+     * list of generators (sorted)
+     */
+    protected PriorityQueue<AbstractPageGenerator> pageGenerators;
+
+    /**
      * Load fonts
      * @throws Exception
      */
@@ -252,7 +258,56 @@ public class PDFGenerator {
         }
     }
 
+    /**
+     * prepare and generate PDF
+     * @throws Exception
+     */
     public void generate() throws Exception {
+        // create and sort generator objects
+        createSortedList();
+
+        // call PDF generation
+        createPDF();
+    }
+
+    /**
+     * create and sort PDF generator objects
+     * @throws Exception
+     */
+    protected void createSortedList() throws Exception {
+        // initialize queue
+        this.pageGenerators = new PriorityQueue<>();
+
+        // iterate data to create objects
+        for (Object o : this.data) {
+            Map data = (Map) o; // to map
+            // check type
+            String type = (String) data.get("type");
+            if (type == null) throw new Exception("The following data contained no type: " + o.toString());
+            // try to load class and create instance
+            AbstractPageGenerator pageGenerator;
+
+            try {
+                Class c = Class.forName(type);
+                pageGenerator = (AbstractPageGenerator) c.newInstance();
+                if (pageGenerator == null) throw new Exception();
+            }  catch (Exception e) {
+                throw new Exception("Type " + type + " not valid in following data: " + o.toString());
+            }
+
+            // set data
+            pageGenerator.setGenerator(this);
+            pageGenerator.setData(data);
+
+            this.pageGenerators.add(pageGenerator);
+        }
+    }
+
+    /**
+     * actual PDF generation
+     * @throws Exception
+     */
+    protected void createPDF() throws Exception {
         // create PDF
         Document document = new Document(pageSizeValue, marginHorizontal, marginHorizontal, marginVertical, marginVertical);
         PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(getFileName()));
@@ -262,35 +317,24 @@ public class PDFGenerator {
         document.addCreator("Star Wars Talent Tree Generator, see https://github.com/mkalus/sw-talenttree-generator");
         document.addTitle(strings.getProperty("PDFTitle", "Star Wars Talent Trees"));
 
-        // iterate data files to generate PDF
-        for (Object o : this.data) {
-            Map data = (Map) o; // to map
-            // check type
-            String type = (String) data.get("type");
-            if (type == null) throw new Exception("The following data contained no type: " + o.toString());
-            // try to load class and create instance
-            AbstractPageGenerator abstractPageGenerator;
-            try {
-                Class c = Class.forName(type);
-                abstractPageGenerator = (AbstractPageGenerator) c.newInstance();
-                if (abstractPageGenerator == null) throw new Exception();
-            }  catch (Exception e) {
-                throw new Exception("Type " + type + " not valid in following data: " + o.toString());
-            }
+        // iterate pageGenerators to generate PDF
+        while (this.pageGenerators.size() > 0) {
+            // get element from queue
+            AbstractPageGenerator pageGenerator = this.pageGenerators.poll();
 
             // new page, if needed
             document.newPage();
             PdfContentByte canvas = writer.getDirectContent();
 
             // fill data
-            abstractPageGenerator.setGenerator(this);
-            abstractPageGenerator.setDocument(document);
-            abstractPageGenerator.setWriter(writer);
-            abstractPageGenerator.setCanvas(canvas);
-            abstractPageGenerator.setData(data);
+            pageGenerator.setDocument(document);
+            pageGenerator.setWriter(writer);
+            pageGenerator.setCanvas(canvas);
 
             // generate page
-            abstractPageGenerator.generate();
+            pageGenerator.generate();
+
+            System.out.println(pageGenerator.getLocalizedSortKey());
         }
 
         // close and write document

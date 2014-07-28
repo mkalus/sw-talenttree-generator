@@ -8,9 +8,9 @@ Example file (German talents): https://dl.dropboxusercontent.com/u/9102471/StarW
 
 Current status:
 - runs on command line, no fancy GUI
-- German talent tree for Edge of the empire file finished (English, Age of Rebellion and other languages = TODO)
-- only "normal" talent trees supported currently, no force sensitive ones or vintage ones (in the works)
-- occupations from extensions are not included yet
+- All talent trees from Edge if the Empire base game (German and English)
+- Supplement "Dangerous Covenants" (English)
+- Supplement "Enter the Unknown" (English)
 
 Help would be appreciated :-)
 

@@ -1,0 +1,16 @@
+Version 1:
+==========
+
+- Base version German
+
+Version 2:
+==========
+
+- English trees for Edge of the Empire implemented
+- Force sensitive trees added
+
+Version 3:
+==========
+
+- "Dangerous Covenants" and "Enter the Unknown" added
+- Signature trees added

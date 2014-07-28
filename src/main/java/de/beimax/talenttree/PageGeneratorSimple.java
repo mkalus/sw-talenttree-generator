@@ -41,59 +41,9 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         addDescriptiveText();
 
         // add talent paths
-        canvas.saveState();
-        canvas.setColorStroke(PDFGenerator.lineColor);
-        canvas.setLineWidth(PDFGenerator.talentPathStroke);
-        try {
-            int row = 0;
-            for (Object oRow : (ArrayList) data.get("talent_paths")) {
-                int col = 0;
-                for (int path : (ArrayList<Integer>) oRow) {
-                    addTalentPath(row, col, path);
-                    col++;
-                }
-                row++;
-            }
-        } catch (Exception e) {
-            throw new Exception("Error while creating talent paths in " + data.get("id") + ": " + e.getMessage());
-        }
-        canvas.restoreState();
-
-        // prepare regex patters
-        Pattern multiColsPattern = Pattern.compile("\\*([1-4])");
-        Pattern customCostPattern = Pattern.compile("\\|([0-9]+)");
-
+        addTalentPaths();
         // add talents
-        try {
-            int row = 0;
-            for (Object oRow : (ArrayList) data.get("talents")) {
-                int col = 0;
-                for (String talent : (ArrayList<String>) oRow) {
-                    // parse talent string
-                    int multiCols = 1;
-                    int customCost = -1;
-                    // first find multiple columns
-                    Matcher matcher = multiColsPattern.matcher(talent);
-                    if (matcher.find()) {
-                        // found multi column directive
-                        multiCols = new Integer(matcher.group(1));
-                        talent = matcher.replaceAll("");
-                    }
-                    // then find custom cost
-                    matcher = customCostPattern.matcher(talent);
-                    if (matcher.find()) {
-                        // found multi column directive
-                        customCost = new Integer(matcher.group(1));
-                        talent = matcher.replaceAll("");
-                    }
-                    addTalent(row, col, talent, multiCols, customCost);
-                    col += multiCols;
-                }
-                row++;
-            }
-        } catch (Exception e) {
-            throw new Exception("Error while creating talent list in " + data.get("id") + ": " + e.getMessage());
-        }
+        addTalents();
 
         // write footer
         addFooter();
@@ -214,6 +164,30 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
     }
 
     /**
+     * Add talent paths
+     * @throws Exception
+     */
+    protected void addTalentPaths() throws Exception {
+        canvas.saveState();
+        canvas.setColorStroke(PDFGenerator.lineColor);
+        canvas.setLineWidth(PDFGenerator.talentPathStroke);
+        try {
+            int row = 0;
+            for (Object oRow : (ArrayList) data.get("talent_paths")) {
+                int col = 0;
+                for (int path : (ArrayList<Integer>) oRow) {
+                    addTalentPath(row, col, path);
+                    col++;
+                }
+                row++;
+            }
+        } catch (Exception e) {
+            throw new Exception("Error while creating talent paths in " + data.get("id") + ": " + e.getMessage());
+        }
+        canvas.restoreState();
+    }
+
+    /**
      * draw paths between talents
      * @param row
      * @param col
@@ -244,6 +218,48 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
             canvas.moveTo(x, y + PDFGenerator.verticalSpacing);
             canvas.lineTo(x, y - PDFGenerator.talentBoxStroke - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke); //  PDFGenerator.verticalSpacing - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke
             canvas.stroke();
+        }
+    }
+
+    /**
+     * Add talent boxes
+     * @throws Exception
+     */
+    protected void addTalents() throws Exception {
+        // prepare regex patters
+        Pattern multiColsPattern = Pattern.compile("\\*([1-4])");
+        Pattern customCostPattern = Pattern.compile("\\|([0-9]+)");
+
+        // add talents
+        try {
+            int row = 0;
+            for (Object oRow : (ArrayList) data.get("talents")) {
+                int col = 0;
+                for (String talent : (ArrayList<String>) oRow) {
+                    // parse talent string
+                    int multiCols = 1;
+                    int customCost = -1;
+                    // first find multiple columns
+                    Matcher matcher = multiColsPattern.matcher(talent);
+                    if (matcher.find()) {
+                        // found multi column directive
+                        multiCols = new Integer(matcher.group(1));
+                        talent = matcher.replaceAll("");
+                    }
+                    // then find custom cost
+                    matcher = customCostPattern.matcher(talent);
+                    if (matcher.find()) {
+                        // found multi column directive
+                        customCost = new Integer(matcher.group(1));
+                        talent = matcher.replaceAll("");
+                    }
+                    addTalent(row, col, talent, multiCols, customCost);
+                    col += multiCols;
+                }
+                row++;
+            }
+        } catch (Exception e) {
+            throw new Exception("Error while creating talent list in " + data.get("id") + ": " + e.getMessage());
         }
     }
 
@@ -297,13 +313,13 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         canvas.setFontAndSize(generator.getFontHeader(), 13);
         float offSetYTalentText;
         if (headerTwoLine) {
-            String[] parts = headerProperties.title.split("\\n");
+            String[] parts = headerProperties.title.toUpperCase().split("\\n");
             canvas.showTextAligned(Element.ALIGN_LEFT, parts[0], x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 14f, 0);
             canvas.showTextAligned(Element.ALIGN_LEFT, parts[1], x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 27f, 0);
             offSetYTalentText = y - PDFGenerator.talentBoxStroke*2 - 28f;
         }
         else {
-            canvas.showTextAligned(Element.ALIGN_LEFT, headerProperties.title, x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 14f, 0);
+            canvas.showTextAligned(Element.ALIGN_LEFT, headerProperties.title.toUpperCase(), x + PDFGenerator.talentBoxStroke*3.5f, y - PDFGenerator.talentBoxStroke*2 - 14f, 0);
             offSetYTalentText = y - PDFGenerator.talentBoxStroke*2 - 15f;
         }
         // mini text
@@ -468,5 +484,47 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
     protected float calculateRowOffset(int row) {
         float spacing = PDFGenerator.verticalSpacing;
         return spacing/2 + PDFGenerator.marginVertical + (5 - row) * (PDFGenerator.talentBoxHeight + spacing);
+    }
+
+    /**
+     * sort key
+     */
+    protected String mySortKey = null;
+
+    /**
+     * Get localized sort key for ordering
+     * @return Sort key string
+     */
+    public String getLocalizedSortKey() {
+        if (mySortKey == null) {
+            createSortKey();
+        }
+
+        return mySortKey;
+    }
+
+    /**
+     * create a sort key
+     */
+    protected void createSortKey() {
+        try {
+            StringBuilder b = new StringBuilder();
+            // prepend?
+            Object o = data.get("sortKeyPrepend");
+            if (o != null) b.append((String) o);
+            b.append(getMappedLocalizedString("header")).append("00").append(getMappedLocalizedString("subheader"));
+            mySortKey = b.toString();
+        } catch (Exception e) {
+            try {
+                mySortKey = getId();
+            } catch (Exception e1) {
+                mySortKey = "";
+            }
+        }
+    }
+
+    @Override
+    public int compareTo(AbstractPageGenerator abstractPageGenerator) {
+        return getLocalizedSortKey().compareTo(abstractPageGenerator.getLocalizedSortKey());
     }
 }

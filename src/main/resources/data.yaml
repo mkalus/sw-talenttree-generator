@@ -108,6 +108,150 @@ talent_paths:
   - [1,0,0,1]
   - [1,1,1]
 ---
+#Extended: Enter the Unknown
+id: ExplorerArchaeologist
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: Archaeologist
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - Athletics
+  - Discipline
+  - KnowledgeEducation
+  - KnowledgeLore
+talents:
+  - [WellRounded, HardHeaded, Researcher, Grit]
+  - [Durable, Toughened, Resolve, KnowledgeSpecialization]
+  - [StunningBlow, Knockdown, RespectedScholar, Researcher]
+  - [HardHeaded, Enduring, Grit, KnowledgeSpecialization]
+  - [Pin, Dedication, RespectedScholar, MuseumWorthy]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,1]
+  - [1,1,1]
+  - [1,0,0,1]
+  - [1,0,0]
+  - [1,0,1,1]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
+---
+#Extended: Enter the Unknown
+id: ExplorerBigGameHunter
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: BigGameHunter
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - KnowledgeXenology
+  - RangedHeavy
+  - Stealth
+  - Survival
+talents:
+  - [Forager, Grit, Stalker, Outdoorsman]
+  - [Toughened, Outdoorsman, Confidence, Swift]
+  - [Stalker, NaturalHunter, ExpertTracker, HightenedAwareness]
+  - [Grit, HuntersQuarry, QuickStrike, ExpertTracker]
+  - [BringItDown, HuntersQuarryImproved, Dedication, SuperiorReflexes]
+talent_paths:
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,1,0]
+  - [1,0,1,0]
+  - [0,1,1]
+  - [0,0,1,1]
+  - [1,1,0]
+  - [1,1,1,1]
+  - [0,0,1]
+---
+#Extended: Enter the Unknown
+id: ExplorerDriver
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Explorer
+subheader: Driver
+skills:
+  - Astrogation
+  - Cool
+  - PilotingSpace
+  - Survival
+  - Perception
+  - KnowledgeLore
+  - KnowledgeOuterRim
+  - KnowledgeXenology
+bonus_skills:
+  - Cool
+  - Gunnery
+  - Mechanics
+  - PilotingPlanetary
+talents:
+  - [FullThrottle, AllTerrainDriver, FineTuning, Gearhead]
+  - [Grit, SkilledJokey, RapidReaction, Grit]
+  - [FullThrottleImproved, TrickyTarget, FineTuning, Toughened]
+  - [DefensiveDriving, SkilledJokey, NaturalDriver, Gearhead]
+  - [FullThrottleSupreme, FullStop, MasterDriver, Dedication]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,1]
+  - [1,1,1]
+  - [1,0,1,1]
+  - [0,0,1]
+  - [1,0,0,1]
+  - [1,1,0]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+#Extended: Enter the Unknown
+id: SignatureExplorerSuddenDiscovery
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureExplorer
+subheader: SuddenDiscovery
+group: Explorer
+talents:
+  - [SDBase|30*4]
+  - [SDAddBoost, SDReduceSetback, SDReduceSetback, SDChangeSkill]
+  - [SDAddBoost, SDReduceDifficulty, SDFrequency, SDDestiny]
+talent_paths:
+  - [0,0,0]
+  - [1,0,1,1]
+  - [0,1,0]
+  - [1,1,0,1]
+  - [1,1,0]
+signature_nodes: [1,1,0,0]
+---
+#Extended: Enter the Unknown
+id: SignatureExplorerUnmatchedMobility
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureExplorer
+subheader: UnmatchedMobility
+group: Explorer
+talents:
+  - [UMBase|30*4]
+  - [UMDuration, UMFreeManeuver, UMFreeManeuver, UMMeleeDefense]
+  - [UMDuration, UMDuration, UMDestiny, UMRangedDefense]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,1,0]
+  - [1,0,1,1]
+  - [1,1,1]
+signature_nodes: [1,0,0,1]
+---
 id: BountyHunterAssassin
 type: de.beimax.talenttree.PageGeneratorCareer
 header: BountyHunter
@@ -528,6 +672,150 @@ talent_paths:
   - [0,1,0,1]
   - [1,1,1]
 ---
+#Extended: Dangerous Covenants
+id: HiredGunEnforcer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Enforcer
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Brawl
+  - Coercion
+  - KnowledgeUnderworld
+  - Streetwise
+talents:
+  - [Toughened, Intimidating, Fearsome, StreetSmarts]
+  - [Durable, StunningBlow, NaturalEnforcer, TalkTheTalk]
+  - [Intimidating, DefensiveStance, Toughened, Loom]
+  - [SecondWind, StreetSmarts, WalkTheWalk, Intimidating]
+  - [Fearsome, Dedication, BlackmarketContacts, Fearsome]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,1,1]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [1,1,0]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+#Extended: Dangerous Covenants
+id: HiredGunDemolitionist
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Demolitionist
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Computers
+  - Cool
+  - Mechanics
+  - Skulduggery
+talents:
+  - [PowerfulBlast, Grit, SelectiveDetonation, SteadyNerves]
+  - [Toughened, TimeToGo, PowerfulBlast, Grit]
+  - [Enduring, TimeToGoImproved, SteadyNerves, RapidReaction]
+  - [ImprovisedDetonation, PowerfulBlast, Grit, SelectiveDetonation]
+  - [ImprovisedDetonationImproved, Dedication, MasterGrenadier, SelectiveDetonation]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,0,1]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,0,1,1]
+  - [1,1,1]
+  - [1,0,1,0]
+  - [0,1,1]
+---
+#Extended: Dangerous Covenants
+id: HiredGunHeavy
+type: de.beimax.talenttree.PageGeneratorCareer
+header: HiredGun
+subheader: Heavy
+skills:
+  - Athletics
+  - Brawl
+  - Discipline
+  - Melee
+  - PilotingPlanetary
+  - RangedLight
+  - Resilience
+  - Vigilance
+bonus_skills:
+  - Gunnery
+  - Perception
+  - RangedHeavy
+  - Resilience
+talents:
+  - [Burly, Barrage, Grit, Toughened]
+  - [Barrage, Brace, SpareClip, Durable]
+  - [SideStep, Burly, HeroicFortitude, Toughened]
+  - [Brace, Barrage, RainOfDeath, HeroicResilience]
+  - [Burly, Dedication, ArmorMaster, HeavyHitter]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [1,1,0]
+  - [0,1,0,1]
+  - [0,0,1]
+  - [1,1,0,1]
+  - [1,0,0]
+  - [1,0,1,0]
+  - [1,1,1]
+---
+#Extended: Dangerous Covenants
+id: SignatureHiredGunLastOneStanding
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureHiredGun
+subheader: LastOneStanding
+group: HiredGun
+talents:
+  - [LOSBase|30*4]
+  - [LOSReduceSetBack, LOSAddBoost, LOSReduceSetBack, LOSAddBoost]
+  - [LOSReduceDifficulty, LOSIncreaseEffect, LOSIncreaseEffect, LOSDestiny]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,1,1]
+signature_nodes: [0,1,1,0]
+---
+#Extended: Dangerous Covenants
+id: SignatureHiredGunUnmatchedProtection
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureHiredGun
+subheader: UnmatchedProtection
+group: HiredGun
+talents:
+  - [UPBase|30*4]
+  - [UPDuration, UPDuration, UPSoak, UPProtectAlly]
+  - [UPDuration, UPDestiny, UPAdditionalReduction, UPAdditionalReduction]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,0,1]
+  - [1,1,0,1]
+  - [1,0,1]
+signature_nodes: [1,0,0,1]
+---
 id: SmugglerPilot
 type: de.beimax.talenttree.PageGeneratorCareer
 header: Smuggler
@@ -743,6 +1031,7 @@ type: de.beimax.talenttree.PageGeneratorSimple
 header: Universal
 subheader: ForceSensitiveExile
 descriptiveText: descriptionUniversalForceSensitiveExile
+sortKeyPrepend: ZZZ00
 talents:
   - [UncannySenses, Insight, Forager, UncannyReactions]
   - [ConvincingDemeanor, OverwhelmEmotions, IntenseFocus, QuickDraw]
