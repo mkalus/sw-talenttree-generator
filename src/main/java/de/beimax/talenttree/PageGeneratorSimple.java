@@ -343,7 +343,6 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         while (!textAdded) { // adapt text size to box size
             // create table
             PdfPTable table = getTalentCell(key, talentBoxWidth, textSize);
-            System.out.println(max);
             // check table height against maximum height
             if (table.getRowHeight(0) <= max || textSize <= 7.5f) { // small enough or textSize very small anyway?
                 table.writeSelectedRows(0, -1, x + PDFGenerator.talentBoxStroke*1.5f, offSetYTalentText, canvas);
