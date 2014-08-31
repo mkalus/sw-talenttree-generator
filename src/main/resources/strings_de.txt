@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 4
-date = 28.07.2014
+version = 5
+date = 31.08.2014
 game = Am Rande des Imperiums
 copyright = (c) Fantasy Flight Games and Heidelberger Spiele
 PDFTitle = Star Wars am Rande des Imperiums: Talentbäume
@@ -408,9 +408,9 @@ UncannySenses = Pro Talentrang bekommst du einen |#B | in den Pool aller Wahrneh
 Archaeologist = Archäologe
 BigGameHunter = Großwildjäger
 Driver = Fahrer
-SignatureExplorer = TODO
-SuddenDiscovery = TODO
-UnmatchedMobility = TODO
+SignatureExplorer = Signaturfähigkeit des Entdeckers
+SuddenDiscovery = Pötzliche Entdeckung
+UnmatchedMobility = Unübertroffene Wendigkeit
 AllTerrainDriverData = TODO|000|P|N
 AllTerrainDriver = TODO
 BringItDownData = TODO|000|A|N
@@ -460,9 +460,9 @@ UMRangedDefense = TODO
 Enforcer = Vollstrecker
 Demolitionist = Sprengstoffexperte
 Heavy = Schwergewicht
-SignatureHiredGun = TODO
-LastOneStanding = TODO
-UnmatchedProtection = TODO
+SignatureHiredGun = Signaturfähigkeit des Söldners
+LastOneStanding = Der letzte stehende Mann
+UnmatchedProtection = Unübertroffener Schutz
 BurlyData = TODO|DC32|P|R
 Burly = TODO
 FearsomeData = TODO|DC32|P|R
