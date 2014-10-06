@@ -14,6 +14,7 @@ Current status:
 - All talent trees from Edge if the Empire base game (German and English)
 - Supplement "Dangerous Covenants" (English)
 - Supplement "Enter the Unknown" (English)
+- Supplement "Far Horizons" (English)
 
 Help would be appreciated :-)
 

@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 5
-date = 31.08.2014
+version = 6
+date = 06.10.2014
 game = Am Rande des Imperiums
 copyright = (c) Fantasy Flight Games and Heidelberger Spiele
 PDFTitle = Star Wars am Rande des Imperiums: Talentbäume
@@ -519,6 +519,76 @@ UPProtectAllyData = TODO|EU37|A|N
 UPProtectAlly = TODO
 UPSoakData = TODO|EU37|A|N
 UPSoak = TODO
+
+#Supplement: Far Horizons
+Entrepreneur = Unternehmer
+Marshal = Marschal
+Performer = Künstler
+SignatureColonist = Signaturfähigkeit des Kolonisten
+InsightfulRevelation = Aufschlussreiche Enthüllung
+UnmatchedExpertise = Unübertroffene Expertise
+BadCopData = TODO|FH32|P|R
+BadCop = TODO
+BiggestFanData = TODO|FH32|A|N
+BiggestFan = TODO
+BoughtInfoData = TODO|FH32|A|N
+BoughtInfo = TODO
+CongenialData = TODO|FH32|A|R
+Congenial = TODO
+CoordinationDodgeData = TODO|FH32|A|N
+CoordinationDodge = TODO
+DeceptiveTauntData = TODO|FH32|A|N
+DeceptiveTaunt = TODO
+DistractingBehaviorData = TODO|FH32|A|R
+DistractingBehavior = TODO
+DistractingBehaviorImprovedData = TODO|FH33|P|N
+DistractingBehaviorImproved = TODO
+GoodCopData = TODO|FH33|P|R
+GoodCop = TODO
+GreasedPalmsData = TODO|FH33|A|R
+GreasedPalms = TODO
+NaturalAthleteData = TODO|FH33|A|N
+NaturalAthlete = TODO
+NaturalMerchantData = TODO|FH33|A|N
+NaturalMerchant = TODO
+SoundInvestmentsData = TODO|FH33|P|R
+SoundInvestments = TODO
+ThrowingCreditsData = TODO|FH33|A|N
+ThrowingCredits = TODO
+UnrelentingScepticData = TODO|FH33|P|N
+UnrelentingSceptic = TODO
+UnrelentingScepticImprovedData = TODO|FH33|A|N
+UnrelentingScepticImproved = TODO
+IRAddBoostData = TODO|FH36|A|N
+IRAddBoost = TODO
+IRAdditionalSkillsData = TODO|FH36|A|N
+IRAdditionalSkills = TODO
+IRBaseData = TODO|FH35|P|N
+IRBase = TODO
+IRDestinyData = TODO|FH36|A|N
+IRDestiny = TODO
+IRDurationData = TODO|FH36|A|N
+IRDuration = TODO
+IRIncreaseEffectData = TODO|FH36|A|N
+IRIncreaseEffect = TODO
+IRReduceDifficultyData = TODO|FH36|A|N
+IRReduceDifficulty = TODO
+IRReduceSetBackData = TODO|FH36|A|R
+IRReduceSetBack = TODO
+UEActivation1Data = TODO|FH37|A|R
+UEActivation1 = TODO
+UEActivation2Data = TODO|FH37|A|R
+UEActivation2 = TODO
+UEBaseData = TODO|FH36|P|N
+UEBase = TODO
+UEDestinyData = TODO|FH37|A|N
+UEDestiny = TODO
+UEReduceDifficultyData = TODO|FH37|A|N
+UEReduceDifficulty = TODO
+UEReduceSetBackData = TODO|FH36|A|R
+UEReduceSetBack = TODO
+UESuperiorReductionData = TODO|FH37|A|N
+UESuperiorReduction = TODO
 
 #Force Powers
 ControlSense1 = Andauernder Effekt: Ein |#C | wird angelegt. Ein Mal pro Runde kann der Machtnutzer bei einem Angriff gegen ihn die Schwierigkeit ein Mal aufwerten.

@@ -462,6 +462,150 @@ talent_paths:
   - [1,0,0,1]
   - [1,1,1]
 ---
+#Extended: Far Horizons
+id: ColonistEntrepreneur
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Colonist
+subheader: Entrepreneur
+skills:
+  - Charm
+  - Leadership
+  - Streetwise
+  - Deception
+  - Negotiation
+  - KnowledgeEducation
+  - KnowledgeLore
+  - KnowledgeCoreWorlds
+bonus_skills:
+  - Discipline
+  - KnowledgeEducation
+  - KnowledgeUnderworld
+  - Negotiation
+talents:
+  - [SoundInvestments, PlausibleDeniability, RapidRecovery, Grit]
+  - [RapidRecovery, WheelAndDeal, SoundInvestments, WheelAndDeal]
+  - [GreasedPalms, ThrowingCredits, BoughtInfo, SoundInvestments]
+  - [SoundInvestments, Toughened, MasterMerchant, KnowSomebody]
+  - [NaturalMerchant, IntenseFocus, Dedication, SoundInvestments]
+talent_paths:
+  - [0,0,0]
+  - [1,0,1,0]
+  - [1,0,1]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,0,0,1]
+  - [1,0,1]
+  - [1,1,0,1]
+  - [1,1,1]
+---
+#Extended: Far Horizons
+id: ColonistMarshal
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Colonist
+subheader: Marshal
+skills:
+  - Charm
+  - Leadership
+  - Streetwise
+  - Deception
+  - Negotiation
+  - KnowledgeEducation
+  - KnowledgeLore
+  - KnowledgeCoreWorlds
+bonus_skills:
+  - Coercion
+  - KnowledgeUnderworld
+  - RangedLight
+  - Vigilance
+talents:
+  - [HardHeaded, Grit, StreetSmarts, Toughened]
+  - [Durable, GoodCop, BadCop, QuickDraw]
+  - [HardHeaded, Grit, GoodCop, PointBlank]
+  - [Durable, UnrelentingSceptic, BadCop, PointBlank]
+  - [HardHeadedImproved, UnrelentingScepticImproved, Dedication, NaturalMarksman]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [1,1,1]
+  - [1,1,1,1]
+  - [0,1,0]
+  - [1,1,1,1]
+  - [0,1,0]
+  - [1,1,0,1]
+  - [0,1,0]
+---
+#Extended: Far Horizons
+id: ColonistPerformer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Colonist
+subheader: Performer
+skills:
+  - Charm
+  - Leadership
+  - Streetwise
+  - Deception
+  - Negotiation
+  - KnowledgeEducation
+  - KnowledgeLore
+  - KnowledgeCoreWorlds
+bonus_skills:
+  - Charm
+  - Coordination
+  - Deception
+  - Melee
+talents:
+  - [SmoothTalker, KillWithKindness, DistractingBehavior, ConvincingDemeanor]
+  - [DistractingBehavior, Congenial, Dodge, JumpUp]
+  - [DistractingBehavior, IntensePresence, NaturalAthlete, SecondWind]
+  - [SmoothTalker, DistractingBehaviorImproved, Grit, Toughened]
+  - [BiggestFan, DeceptiveTaunt, CoordinationDodge, Dedication]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [1,1,1]
+  - [1,1,1,0]
+  - [1,0,1]
+  - [1,0,1,1]
+  - [1,0,1]
+  - [1,1,1,1]
+  - [0,0,0]
+---
+#Extended: Far Horizons
+id: SignatureColonistInsightfulRevelation
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureColonist
+subheader: InsightfulRevelation
+group: Colonist
+talents:
+  - [IRBase|30*4]
+  - [IRReduceSetBack, IRDestiny, IRReduceDifficulty, IRAdditionalSkills]
+  - [IRAddBoost, IRReduceSetBack, IRIncreaseEffect, IRDuration]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [1,1,1]
+  - [1,1,0,1]
+  - [1,1,1]
+signature_nodes: [0,1,0,1]
+---
+#Extended: Far Horizons
+id: SignatureColonistUnmatchedExpertise
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureColonist
+subheader: UnmatchedExpertise
+group: Colonist
+talents:
+  - [UEBase|30*4]
+  - [UEReduceSetBack, UEActivation1, UEActivation2, UEReduceSetBack]
+  - [UEReduceSetBack, UESuperiorReduction, UEDestiny, UEReduceDifficulty]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,1,0]
+  - [1,0,1,1]
+  - [1,0,0]
+signature_nodes: [0,1,1,0]
+---
 id: HiredGunBodyguard
 type: de.beimax.talenttree.PageGeneratorCareer
 header: HiredGun
