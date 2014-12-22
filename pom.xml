@@ -18,7 +18,7 @@
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
-            <version>5.5.3</version>
+            <version>5.5.4</version>
         </dependency>
         <!-- Get command line arguments -->
         <dependency>
