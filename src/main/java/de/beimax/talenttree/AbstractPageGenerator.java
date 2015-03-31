@@ -259,7 +259,7 @@ public abstract class AbstractPageGenerator implements Comparable<AbstractPageGe
         canvas.setFontAndSize(generator.getFontRegular(), 6f);
         canvas.setColorFill(BaseColor.BLACK);
         canvas.showTextAligned(Element.ALIGN_LEFT, getLocalizedString("copyright"), getLeftX(), PDFGenerator.marginVertical, 0);
-        canvas.showTextAligned(Element.ALIGN_RIGHT, "Version " + getLocalizedString("version") + " • " + getLocalizedString("date") + " • " + getLocalizedString("game") + " • http://auxc.de/18w", getRightX(), PDFGenerator.marginVertical, 0);
+        canvas.showTextAligned(Element.ALIGN_RIGHT, "Version " + getLocalizedString("version") + " • " + getLocalizedString("date") + " • " + getLocalizedString("game") + " • " + getLocalizedString("link"), getRightX(), PDFGenerator.marginVertical, 0);
         canvas.endText();
     }
 

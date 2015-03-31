@@ -9,6 +9,7 @@ version = 4
 date = 2014-07-28
 game = Edge of the Empire
 copyright = Copyright Fantasy Flight Games
+link = http://auxc.de/18x
 PDFTitle = Star Wars Talent Trees
 FileName =
 Active =
