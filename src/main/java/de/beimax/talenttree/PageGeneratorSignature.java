@@ -51,8 +51,8 @@ public class PageGeneratorSignature extends PageGeneratorSimple {
         float x = getRightX();
         float y = getTopY() - 20;
 
-        drawLegendArrow(PDFGenerator.activeColor, x, y);
-        drawLegendArrow(PDFGenerator.passiveColor, x, y - 15);
+        drawLegendArrow(PDFGenerator.passiveColor, x, y);
+        drawLegendArrow(PDFGenerator.activeColor, x, y - 15);
 
         // draw ranked
         drawRanked(PDFGenerator.passiveColor, x, y - 30);
