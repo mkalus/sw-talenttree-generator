@@ -960,6 +960,150 @@ talent_paths:
   - [1,1,1,1]
   - [0,1,0]
 ---
+#Extended: Fly Casual
+id: SmugglerCharmer
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Smuggler
+subheader: Charmer
+skills:
+  - Skulduggery
+  - Coordination
+  - PilotingSpace
+  - Streetwise
+  - Deception
+  - Vigilance
+  - Perception
+  - KnowledgeUnderworld
+bonus_skills:
+  - Charm
+  - Cool
+  - Leadership
+  - Negotiation
+talents:
+  - [SmoothTalker, InspiringRhetoric, KillWithKindness, Grit]
+  - [KillWithKindness, InspiringRhetoricImproved, CongenialFC, PlausibleDeniability]
+  - [DisarmingSmile, WorksLikeACharm, DisarmingSmile, Grit]
+  - [SmoothTalker, CongenialFC, JustKidding, IntensePresence]
+  - [NaturalCharmer, Dedication, DontShoot, Resolve]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [0,1,0]
+  - [1,0,1,1]
+  - [0,1,0]
+  - [1,0,1,1]
+  - [1,1,1]
+  - [1,0,1,1]
+  - [1,1,1]
+---
+#Extended: Fly Casual
+id: SmugglerGambler
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Smuggler
+subheader: Gambler
+skills:
+  - Skulduggery
+  - Coordination
+  - PilotingSpace
+  - Streetwise
+  - Deception
+  - Vigilance
+  - Perception
+  - KnowledgeUnderworld
+bonus_skills:
+  - Computers
+  - Cool
+  - Deception
+  - Skulduggery
+talents:
+  - [ConvincingDemeanor, Grit, Toughened, UpTheAnte]
+  - [Grit, SecondChances, Dedication, DoubleOrNothingSupreme]
+  - [SecondChances, ConvincingDemeanor, FortuneFavorsTheBold, NaturalRogue]
+  - [UpTheAnte, UpTheAnte, CleverSolution, SecondChances]
+  - [DoubleOrNothing, SmoothTalker, NaturalNegotiator, DoubleOrNothingImproved]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,0]
+  - [0,0,1]
+  - [1,1,0,1]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [0,1,1]
+  - [1,0,0,1]
+  - [1,1,1]
+---
+#Extended: Fly Casual
+id: SmugglerGunslinger
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Smuggler
+subheader: Gunslinger
+skills:
+  - Skulduggery
+  - Coordination
+  - PilotingSpace
+  - Streetwise
+  - Deception
+  - Vigilance
+  - Perception
+  - KnowledgeUnderworld
+bonus_skills:
+  - Coercion
+  - Cool
+  - KnowledgeOuterRim
+  - RangedLight
+talents:
+  - [Grit, QuickStrike, RapidReaction, QuickDraw]
+  - [LethalBlows, Grit, QuickStrike, QuickDrawImproved]
+  - [Toughened, CallEm, Dodge, SorryAboutTheMess]
+  - [Confidence, LethalBlows, GunsBlazing, RapidReaction]
+  - [Dedication, Spitfire, NaturalMarksman, DeadlyAccuracy]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [0,0,0]
+  - [1,1,1,1]
+  - [0,1,1]
+  - [1,1,0,1]
+  - [1,1,1]
+  - [0,1,1,0]
+  - [1,0,1]
+---
+#Extended: Fly Casual
+id: SignatureSmugglerNarrowEscape
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureSmuggler
+subheader: NarrowEscape
+group: Smuggler
+talents:
+  - [NEBase|30*4]
+  - [NEReduceSetBack, NEIncreaseEffect, NEAddBoost, NEChangeScale]
+  - [NEReduceDifficulty, NEIncreaseEffect, NEChangeSkill, NEDestiny]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [1,0,1]
+  - [1,0,1,0]
+  - [1,1,1]
+signature_nodes: [0,1,1,0]
+---
+#Extended: Fly Casual
+id: SignatureSmugglerUnmatchedFortune
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureSmuggler
+subheader: UnmatchedFortune
+group: Smuggler
+talents:
+  - [UFBase|30*4]
+  - [UFFrequency, UFIncreaseNumber, UFSharedLuck, UFIncreaseNumber]
+  - [UFDestiny, UFIncreaseEffect, UFIncreaseRange, UFFrequency]
+talent_paths:
+  - [0,0,0]
+  - [1,0,0,1]
+  - [1,1,1]
+  - [1,1,1,0]
+  - [0,0,1]
+signature_nodes: [1,0,0,1]
+---
 id: TechnicianMechanic
 type: de.beimax.talenttree.PageGeneratorCareer
 header: Technician

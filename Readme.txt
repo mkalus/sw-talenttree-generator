@@ -15,6 +15,7 @@ Current status:
 - Supplement "Dangerous Covenants" (English)
 - Supplement "Enter the Unknown" (English)
 - Supplement "Far Horizons" (English)
+- Supplement "Flying Casual" (English)
 
 Help would be appreciated :-)
 
