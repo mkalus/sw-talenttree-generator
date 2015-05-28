@@ -3,6 +3,19 @@
 # Custom cost like this: InfluenceBasicPower|10
 # Custom cost and multi cols like this: InfluenceBasicPower|10*4
 ---
+id: CharacterSheetFront
+type: de.beimax.talenttree.PageGeneratorCharacterSheet
+page: front
+skills:
+  - GeneralSkills: [Astrogation, Athletics, Charm, Coercion, Computers, Cool, Coordination, Deception, Discipline, Leadership, Mechanics, Medicine, Negotiation, Perception, PilotingPlanetary, PilotingSpace, Resilience, Skulduggery, Stealth, Streetwise, Survival, Vigilance]
+  - CombatSkills: [Brawl, Gunnery, Melee, RangedLight, RangedHeavy]
+  - KnowledgeSkills: [KnowledgeCoreWorlds, KnowledgeEducation, KnowledgeLore, KnowledgeOuterRim, KnowledgeUnderworld, KnowledgeXenology]
+  - CustomSkills: [empty, empty, empty, empty, empty, empty]
+---
+id: CharacterSheetBack
+type: de.beimax.talenttree.PageGeneratorCharacterSheet
+page: back
+---
 id: ExplorerFringer
 type: de.beimax.talenttree.PageGeneratorCareer
 header: Explorer

@@ -60,6 +60,30 @@ ForceInfluence = Influence
 ForceMove = Move
 
 #######################################################################################################################
+Characteristics
+#######################################################################################################################
+Brawn=Brawn
+Agility=Agility
+Intellect=Intellect
+Cunning=Cunning
+Willpower=Willpower
+Presence=Presence
+Br=Br
+Ag=Ag
+Int=Int
+Cun=Cun
+Wil=Wil
+Pr=Pr
+Soak=Soak Valus
+Wounds=Wounds
+Strain=Strain
+Defense=Defense
+Threshold=Threshold
+Current=Current
+RangedSub=Ranged
+MeleeSub=Melee
+
+#######################################################################################################################
 Skills
 #######################################################################################################################
 Astrogation = Astrogation
@@ -95,6 +119,7 @@ KnowledgeLore = Knowledge (Lore)
 KnowledgeOuterRim = Knowledge (Outer Rim)
 KnowledgeUnderworld = Knowledge (Underworld)
 KnowledgeXenology = Knowledge (Xenology)
+empty=
 
 #######################################################################################################################
 #Talents
