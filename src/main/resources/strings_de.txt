@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 8
-date = 31.03.2015
+version = 9
+date = 28.05.2015
 game = Am Rande des Imperiums
 copyright = (c) Fantasy Flight Games and Heidelberger Spiele
 link = http://auxc.de/18x
@@ -311,7 +311,7 @@ RespectedScholarData = RENOMMIERTER\nWISSENSCHAFTLER|141|P|R
 ScathingTiradeData = VERLETZENDE WORTE|141|A|N
 ScathingTirade = Du kannst die Aktion Verletzende Worte ausführen: Lege eine |*mittelschwere (|#dd|*) Einschüchterungs-probe | ab. Für jedes |#s | erleidet ein Gegner in kurzer Reichweite 1 Erschöpfung. Du kannst ein |#a | ausgeben, damit einer der Betroffenen 1 weitere Erschöpfung erleidet.
 ScathingTiradeImprovedData = VERBESSERTE\nVERLETZENDE WORTE|141|P|N
-ScathingTiradeImproved = Jeder von deinen von Beflügelnden Worten betroffene Gegner bekommt |#b | auf alle Fertigkeitsproben für so viele Runden, wie du Ränge in Führungsqualität hast.
+ScathingTiradeImproved = Jeder von deinen von Beflügelnden Worten betroffene Gegner bekommt |#b | auf alle Fertigkeitsproben für so viele Runden, wie du Ränge in Einschüchterung hast.
 ScathingTiradeSupremeData = MEISTERHAFTE\nVERLETZENDE WORTE|141|A|N
 ScathingTiradeSupreme = Du kannst 1 Erschöpfung hinnehmen, um Verletzende Worte als Manöver anstatt als Aktion auszuführen.
 SecondWindData = LANGER ATEM|138|A|R
