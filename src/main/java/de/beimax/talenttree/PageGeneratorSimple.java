@@ -119,6 +119,25 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
     }
 
     /**
+     * draw shape for crossing off learned talents
+     * @param color
+     * @param x
+     * @param y
+     */
+    protected void drawCrossOff(BaseColor color, float x, float y) {
+        canvas.setColorFill(BaseColor.WHITE);
+        canvas.setColorStroke(color);
+        canvas.setLineWidth(PDFGenerator.talentBoxStroke);
+
+        // rhombus/diamond
+        canvas.moveTo(x, y);
+        canvas.lineTo(x + PDFGenerator.wedgeOffset, y + PDFGenerator.wedgeOffset);
+        canvas.lineTo(x + 2*PDFGenerator.wedgeOffset, y);
+        canvas.lineTo(x + PDFGenerator.wedgeOffset, y - PDFGenerator.wedgeOffset);
+        canvas.closePathFillStroke();
+    }
+
+    /**
      * draw normal shape - offset to the right
      * @param color
      * @param x
@@ -301,9 +320,11 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
             drawFooterShape(bgColor, x + PDFGenerator.wedgeOffset + PDFGenerator.talentBoxStroke, y - talentBoxHeight + PDFGenerator.talentBoxStroke, 25);
         }
         // draw right footer shape
-        drawFooterShape(bgColor, x + talentBoxWidth - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke - 50, y - talentBoxHeight + PDFGenerator.talentBoxStroke, 50);
+        drawFooterShape(bgColor, x + talentBoxWidth - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke - 47, y - talentBoxHeight + PDFGenerator.talentBoxStroke, 47);
         // draw header shape
         drawHeaderShape(bgColor, x + PDFGenerator.talentBoxStroke*2.5f, y - PDFGenerator.talentBoxStroke*2.5f, talentBoxWidth - PDFGenerator.talentBoxStroke*5, headerTwoLine, headerProperties.status);
+        // draw cross off shape
+        drawCrossOff(bgColor, x + PDFGenerator.talentBoxStroke - PDFGenerator.wedgeOffset - PDFGenerator.talentBoxStroke, y);
         canvas.restoreState();
 
         // draw text
@@ -330,7 +351,7 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
         // draw costs
         if (customCost != 0) {
             if (customCost == -1) customCost = (row + 1) * 5;
-            canvas.showTextAligned(Element.ALIGN_LEFT, getLocalizedString("Cost") + " " + customCost, x + talentBoxWidth - PDFGenerator.talentBoxStroke - 50, textOffsetY, 0);
+            canvas.showTextAligned(Element.ALIGN_LEFT, getLocalizedString("Cost") + " " + customCost, x + talentBoxWidth - PDFGenerator.talentBoxStroke - 47, textOffsetY, 0);
         }
         canvas.endText();
 
@@ -353,10 +374,10 @@ public class PageGeneratorSimple extends AbstractPageGenerator {
 
     /**
      * get celled talent text
-     * @param key
-     * @param talentBoxWidth
-     * @param fontSize
-     * @return
+     * @param key key for talent information
+     * @param talentBoxWidth width of talent box
+     * @param fontSize size of font
+     * @return PdfPTable
      * @throws Exception
      */
     protected PdfPTable getTalentCell(String key, float talentBoxWidth, float fontSize) throws Exception {
