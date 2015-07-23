@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 10
-date = 26.06.2015
+version = 11
+date = 24.07.2015
 game = Am Rande des Imperiums
 copyright = (c) Fantasy Flight Games and Heidelberger Spiele
 link = http://auxc.de/18x
@@ -462,7 +462,7 @@ SDFrequencyData = Häufigkeit|RiU34|A|N
 SDFrequency = Du kannst Plötzliche Entdeckung zwei Mal pro Spielsitzung verwenden.
 SDReduceDifficultyData = Reduzierte\nSchwierigkeit|RiU34|A|N
 SDReduceDifficulty = Die Schwierigkeit der Aktivierung von Plötzliche Entdeckung sinkt auf |*mittelschwer (|#dd|*)|.
-SDReduceSetbackData = Weniger\nKomplikationen|RiU34|A|N
+SDReduceSetbackData = Weniger\nKomplikationen|RiU34|A|R
 SDReduceSetback = Entferne einen |#b| beim Ablegen der Fertigkeitsprobe zum Aktivieren von Plötzliche Entdeckung.
 UMBaseData = Beispiellose Mobilität (Basisform)|RiU35|P|N
 UMBase = Ein Mal pro Spielsitzung kannst du als Nebenaktion 2 Schicksalspunkte ausgeben, um in den nächsten beiden Runden bis zu drei Manöver pro Zug ausführen zu dürfen. Das dritte Manöver bekommst du auf demselben Weg wie ein zweites Manöver.

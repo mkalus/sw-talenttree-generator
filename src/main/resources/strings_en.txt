@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 8
-date = 2015-06-26
+version = 9
+date = 2015-07-24
 game = Edge of the Empire
 copyright = Copyright (c) Fantasy Flight Games
 link = http://auxc.de/18w
@@ -474,7 +474,7 @@ SDFrequencyData = Frequency|EU34|A|N
 SDFrequency = Sudden Discovery may be used twice per game session.
 SDReduceDifficultyData = Reduce Difficulty|EU34|A|N
 SDReduceDifficulty = Reduce the difficulty of the skill check to activate Sudden Discovery to Average (|#dd| ).
-SDReduceSetbackData = Reduce Setback|EU34|A|N
+SDReduceSetbackData = Reduce Setback|EU34|A|R
 SDReduceSetback = Remove |#b| from skill check to activate Sudden Discovery.
 UMBaseData = Unmatched Mobility Base Ability|EU35|P|N
 UMBase = Once per game session as an incidental, the character may spend 2 Destiny Points to increase the number of maneuvers he is allowed to perform in a turn to three for the next two rounds. This third maneuver may be gained through any of the means a second maneuver is normally gained.
