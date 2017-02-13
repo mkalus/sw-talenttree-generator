@@ -6,8 +6,8 @@ This program enables you to automatically create talent tree PDFs for the new ro
 You need Java to run the program.
 
 Or download PDF directly:
-English: https://dl.dropboxusercontent.com/u/9102471/StarWars/Talents_SW_EotE.pdf
-German:  https://dl.dropboxusercontent.com/u/9102471/StarWars/Talente_SW_ARdI.pdf
+English: https://www.beimax.de/fileadmin/downloads/starwars/Talents_SW_EotE.pdf
+German:  https://www.beimax.de/fileadmin/downloads/starwars/Talente_SW_ARdI.pdf
 
 Current status:
 - runs on command line, no fancy GUI
@@ -26,7 +26,7 @@ Running Star Wars PDF Talent Tree Generator
 ===========================================
 
 Download sw-talenttree-generator-all.zip and unzip it.
-URL: https://dl.dropboxusercontent.com/u/9102471/StarWars/sw-talenttree-generator-all.zip
+URL: https://www.beimax.de/fileadmin/downloads/starwars/sw-talenttree-generator-all.zip
 
 There will be a jar file and several data files. Run the jar with -h option to see how the program works:
 java -jar sw-talenttree-generator.jar -h
