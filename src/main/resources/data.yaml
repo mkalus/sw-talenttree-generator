@@ -1209,6 +1209,111 @@ talent_paths:
   - [1,1,1,1]
   - [1,1,1]
 ---
+id: TechnicianCyberTech
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Technician
+subheader: CyberTech
+skills:
+  - Astrogation
+  - Computers
+  - Coordination
+  - Discipline
+  - Mechanics
+  - Perception
+  - PilotingPlanetary
+  - KnowledgeOuterRim
+bonus_skills:
+  - Athletics
+  - Mechanics
+  - Medicine
+  - Vigilance
+talents:
+  - [Cyberneticist, MoreMachineThanMan, EngineeredRedundancies, Toughened]
+  - [EyeForDetail, Toughened, EnergyTransfer, Cyberneticist]
+  - [Overcharge, MoreMachineThanMan, Durable, Surgeon]
+  - [OverchargeImproved, UtilityBelt, MoreMachineThanMan, Surgeon]
+  - [MoreMachineThanMan, Durable, OverchargeSupreme, Dedication]
+talent_paths:
+  - [0,0,0]
+  - [1,1,0,1]
+  - [0,1,1]
+  - [1,1,1,1]
+  - [1,1,1]
+  - [1,1,1,0]
+  - [1,1,1]
+  - [1,0,0,1]
+  - [1,1,0]
+---
+id: TechnicianDroidTech
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Technician
+subheader: DroidTech
+skills:
+  - Astrogation
+  - Computers
+  - Coordination
+  - Discipline
+  - Mechanics
+  - Perception
+  - PilotingPlanetary
+  - KnowledgeOuterRim
+bonus_skills:
+  - Computers
+  - Cool
+  - Mechanics
+  - Leadership
+talents:
+  - [MachineMender, HiddenStorage, SpeaksBinary, Grit]
+  - [DeftMaker, EyeForDetail, Grit, SpeaksBinary]
+  - [Grit, SpeaksBinarySupreme, SpeaksBinaryImproved, HiddenStorage]
+  - [RedundantSystems, MachineMender, SpeaksBinary, DeftMaker]
+  - [EyeForDetail, RerouteProcessors, Dedication, MachineMender]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,0,1,1]
+  - [0,1,0]
+  - [1,0,1,1]
+  - [0,1,1]
+  - [1,1,0,1]
+  - [1,1,1]
+---
+id: TechnicianModder
+type: de.beimax.talenttree.PageGeneratorCareer
+header: Technician
+subheader: Modder
+skills:
+  - Astrogation
+  - Computers
+  - Coordination
+  - Discipline
+  - Mechanics
+  - Perception
+  - PilotingPlanetary
+  - KnowledgeOuterRim
+bonus_skills:
+  - Gunnery
+  - Mechanics
+  - PilotingSpace
+  - Streetwise
+talents:
+  - [Tinkerer, Resolve, KnowSomebody, SignatureVehicle]
+  - [Gearhead, Tinkerer, FancyPaintJob, LargerProject]
+  - [ResourcefulRefit, Resolve, LargerProject, Toughened]
+  - [JuryRigged, HiddenStorage, Tinkerer, Gearhead]
+  - [JuryRigged, Dedication, NaturalTinkerer, CustomLoadout]
+talent_paths:
+  - [0,0,0]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,1,1,1]
+  - [1,0,1]
+  - [1,1,0,1]
+  - [1,1,1]
+  - [0,1,1,1]
+  - [1,1,0]
+---
 id: UniversalForceSensitiveExile
 type: de.beimax.talenttree.PageGeneratorSimple
 header: Universal
