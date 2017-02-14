@@ -5,11 +5,11 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 11
-date = 24.07.2015
+version = 12
+date = 14.02.2017
 game = Am Rande des Imperiums
 copyright = (c) Fantasy Flight Games and Heidelberger Spiele
-link = http://auxc.de/18x
+link = http://auxc.de/19e
 PDFTitle = Star Wars am Rande des Imperiums: Talentbäume
 FileName = Talente_SW_ARdI
 Active = Aktiv
