@@ -1209,6 +1209,7 @@ talent_paths:
   - [1,1,1,1]
   - [1,1,1]
 ---
+#Extended: Special Modifications
 id: TechnicianCyberTech
 type: de.beimax.talenttree.PageGeneratorCareer
 header: Technician
@@ -1244,6 +1245,7 @@ talent_paths:
   - [1,0,0,1]
   - [1,1,0]
 ---
+#Extended: Special Modifications
 id: TechnicianDroidTech
 type: de.beimax.talenttree.PageGeneratorCareer
 header: Technician
@@ -1279,6 +1281,7 @@ talent_paths:
   - [1,1,0,1]
   - [1,1,1]
 ---
+#Extended: Special Modifications
 id: TechnicianModder
 type: de.beimax.talenttree.PageGeneratorCareer
 header: Technician
@@ -1313,6 +1316,42 @@ talent_paths:
   - [1,1,1]
   - [0,1,1,1]
   - [1,1,0]
+---
+#Extended: Special Modifications
+id: SignatureTechnicianInventiveCreation
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureTechnician
+subheader: InventiveCreation
+group: Technician
+talents:
+  - [ICBase|30*4]
+  - [ICReduceSetBack, ICIncreaseRarity, ICReduceSetBack, ICIncreaseRarity]
+  - [ICReduceDifficulty, ICIncreaseRarity, ICDestiny, ICChangeScale]
+talent_paths:
+  - [0,0,0]
+  - [0,1,0,1]
+  - [1,0,1]
+  - [1,0,1,0]
+  - [1,1,1]
+signature_nodes: [0,1,1,0]
+---
+#Extended: Special Modifications
+id: SignatureTechnicianUnmatchedCalibration
+type: de.beimax.talenttree.PageGeneratorSignature
+header: SignatureTechnician
+subheader: UnmatchedCalibration
+group: Technician
+talents:
+  - [UCBase|30*4]
+  - [UCReduceSetBack, UCIncreaseNumber, UCFrequency, UCIncreaseNumber]
+  - [UCDestiny, UCMinimizeRisk, UCOptimization, UCSharedAcumen]
+talent_paths:
+  - [0,0,0]
+  - [0,1,1,0]
+  - [1,0,1]
+  - [1,0,0,1]
+  - [1,0,1]
+signature_nodes: [1,0,0,1]
 ---
 id: UniversalForceSensitiveExile
 type: de.beimax.talenttree.PageGeneratorSimple
