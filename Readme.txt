@@ -12,7 +12,7 @@ German:  https://www.beimax.de/fileadmin/downloads/starwars/Talente_SW_ARdI.pdf
 Current status:
 - runs on command line, no fancy GUI
 - All talent trees from Edge if the Empire base game (German and English)
-- Supplement "Dangerous Covenants" (English)
+- Supplement "Dangerous Covenants" (German and English)
 - Supplement "Enter the Unknown" (German and English)
 - Supplement "Far Horizons" (English)
 - Supplement "Flying Casual" (English)
