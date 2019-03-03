@@ -5,8 +5,8 @@
 #######################################################################################################################
 General
 #######################################################################################################################
-version = 10
-date = 2017-02-14
+version = 11
+date = 2019-03-03
 game = Edge of the Empire
 copyright = Copyright (c) Fantasy Flight Games
 link = https://www.beimax.de/fileadmin/downloads/starwars/Talents_SW_EotE.pdf
